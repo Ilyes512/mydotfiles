@@ -1,8 +1,8 @@
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+set rtp+=~/myvimfiles/vim/bundle/Vundle.vim
+call vundle#begin('~/myvumfiles/vim')
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-vinegar'

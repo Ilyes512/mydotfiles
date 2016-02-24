@@ -1,7 +1,7 @@
 "----------Misc----------
 set nocompatible                  "Compatible mode breaks allot of keys like backspace, tab etc.
 
-so ~/.vim/plugins.vim             "Include Vundle config
+so ~/myvimfiles/vim/plugins.vim   "Include Vundle config
 
 set timeoutlen=1000 ttimeoutlen=0 "Remove the delay you get when switching out of Insert mode to Normal mode
 set backspace=indent,eol,start    "Make's the backspace behave like in normal editor's
@@ -54,10 +54,10 @@ nnoremap <C-L> <C-W><C-L>
 "----------Mappings----------
 
 "Make it easy to edit the .vimrc file
-nmap <Leader>ev :tabedit $MYVIMRC<cr>
+nmap <Leader>ev :tabedit ~/myvimfiles/vimrc.vim<cr>
 
 "Make it easy to edit the plugins.vim file
-nmap <Leader>ep :tabedit ~/.vim/plugins.vim<cr>
+nmap <Leader>ep :tabedit ~/myvimfiles/vim/plugins.vim<cr>
 
 "Make it easy to run Vundle's install and update commands
 nmap <Leader>pi :PluginInstall<cr>
@@ -123,6 +123,6 @@ set noshowmode                       "Removes the default vim status bar
 "Automatically source the Vimrc file on save. The augroup makes sure it's only applied once and prevents vim from freezing
 augroup autosourcing
 	autocmd!
-	autocmd BufWritePost .vimrc source %
+	autocmd BufWritePost vimrc.vim source %
 augroup END
 
