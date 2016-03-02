@@ -1,2 +1,2 @@
-.vim/Bundle/*
-!.vim/Bundle/.gitkeep
+vim/bundle/*
+!vim/bundle/.gitkeep
