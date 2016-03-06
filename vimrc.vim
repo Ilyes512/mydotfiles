@@ -146,3 +146,15 @@ augroup autosourcing
 	autocmd BufWritePost vimrc.vim source %
 augroup END
 
+" Notes
+" - zz will center the screen
+" - zu will move the screen to the top
+" - z<cr> will move the screen to the bottom
+" - <C-D> will scroll the screen down
+" - <C-U> will scroll the screen up
+" - <C-]> will try to find the class/method/property trough ctags
+" - When searching with ctags you can go to the next with ":tn",
+"   go to the previous with ":tp" or see a list with ":ts"
+" - In normal mode you can replace the inside of (), "", [] etc. with
+"   "ci)", 'ci"' and "ci]". Use "ca" instead if you also want to include
+"   the parenthesis (you also use "da" or "di" for deleting).
