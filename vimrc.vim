@@ -75,6 +75,11 @@ noremap <Right> <NOP>
 "Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
 
+"Search with ctags
+nmap <Leader>f :tag<space>
+"Refresh ctags
+nmap <Leader>r :!ctags -R<cr>
+
 "----------Plugins----------
 
 "**Vundle**
