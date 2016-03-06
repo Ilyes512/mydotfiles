@@ -107,8 +107,10 @@ set ttimeoutlen=50                   "Removes a potential delay when switching V
 set noshowmode                       "Removes the default vim status bar
 
 "**GitGutter**
-let g:gitgutter_max_signs = 500      "Limit the number of gitgutter signs
-let g:gitgutter_map_keys = 0         "Disable gitgutter auto key bindings
+let g:gitgutter_enabled = 0            "Disable gitgutter by default
+let g:gitgutter_sign_column_always = 1 "Always show the gitgutter column even when there are no git changes
+let g:gitgutter_max_signs = 500        "Limit the number of gitgutter signs
+let g:gitgutter_map_keys = 0           "Disable gitgutter auto key bindings
 "Toggle GitGutter
 nmap <Leader>git :GitGutterToggle<cr>
 let g:gitgutter_override_sign_column_highlight = 0 "Tell gitgutter to leave the column hightlighting alone
