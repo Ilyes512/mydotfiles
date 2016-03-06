@@ -33,6 +33,8 @@ let t_Co=256                      "Use 256 colours.
 let base16colorspace=256
 colorscheme base16-ocean          "The colour scheme (theme)
 set background=dark               "Use the dark background
+"Choose different colors for the linenumbers
+highlight LineNr ctermbg=bg
 
 "----------Gvim----------
 
@@ -109,6 +111,14 @@ let g:gitgutter_max_signs = 500      "Limit the number of gitgutter signs
 let g:gitgutter_map_keys = 0         "Disable gitgutter auto key bindings
 "Toggle GitGutter
 nmap <Leader>git :GitGutterToggle<cr>
+let g:gitgutter_override_sign_column_highlight = 0 "Tell gitgutter to leave the column hightlighting alone
+"Change the column's background color
+highlight SignColumn ctermbg=bg
+"Change the background colors for the four different git signs
+highligh GitGutterAdd ctermbg=bg
+highligh GitGutterChange ctermbg=bg
+highligh GitGutterDelete ctermbg=bg
+highligh GitGutterChangeDelete ctermbg=bg
 
 "**Better White Space**
 "Toggle Vim-better-whitespace
