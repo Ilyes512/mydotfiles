@@ -90,8 +90,9 @@ nmap <Leader>pu :PluginUpdate<cr>
 "**CtrlP**
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 let g:ctrlp_match_window = 'order:ttb'
+let g:ctrlp_map = '<C-p>'
 "Mapping CtrlP search sumbols
-nmap <C-O> :CtrlPBufTag<cr>
+nmap <C-M> :CtrlPBufTag<cr>
 "Mapping CtrlP most recently used
 nmap <C-E> :CtrlPMRUFiles<cr>
 
