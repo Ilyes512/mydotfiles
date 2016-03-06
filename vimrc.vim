@@ -70,7 +70,7 @@ noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
 
-" Allow saving of files as sudo when I forgot to start vim using sudo.
+"Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
 
 "----------Plugins----------
@@ -109,6 +109,8 @@ let g:gitgutter_max_signs = 500      "Limit the number of gitgutter signs
 let g:gitgutter_map_keys = 0         "Disable gitgutter auto key bindings
 "Toggle GitGutter
 nmap <Leader>git :GitGutterToggle<cr>
+
+"**Better White Space**
 "Toggle Vim-better-whitespace
 nmap <Leader>sw :ToggleWhitespace<cr>
 "Remove trailing whitespace
