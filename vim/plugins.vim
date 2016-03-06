@@ -17,6 +17,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'chriskempson/base16-vim'
 Plugin 'hashivim/vim-vagrant'
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'duggiefresh/vim-easydir'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
