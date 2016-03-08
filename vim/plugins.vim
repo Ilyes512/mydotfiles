@@ -18,6 +18,8 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'hashivim/vim-vagrant'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'duggiefresh/vim-easydir'
+Plugin 'rking/ag.vim'
+Plugin 'skwp/greplace.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
