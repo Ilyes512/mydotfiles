@@ -10,3 +10,14 @@
 set runtimepath^=~/myvimfiles/vim
 source ~/myvimfiles/vimrc.vim
 ```
+
+Make sure you also install the below system packages:
+
+1. ctags
+  - See the project [universal-ctags/ctags](https://github.com/universal-ctags/ctags))
+  - [OSX install guide](https://github.com/universal-ctags/ctags/blob/master/docs/osx.rst)
+  - `$ brew tap universal-ctags/universal-ctags && brew install --HEAD universal-ctags`
+2. ac
+  - See the project [ggreer/the_silver_searcher](https://github.com/ggreer/the_silver_searcher)
+  - `$ brew install the_silver_searcher`
+
