@@ -125,10 +125,10 @@ let g:gitgutter_override_sign_column_highlight = 0 "Tell gitgutter to leave the 
 "Change the column's background color
 highlight SignColumn ctermbg=bg
 "Change the background colors for the four different git signs
-highligh GitGutterAdd ctermbg=bg
-highligh GitGutterChange ctermbg=bg
-highligh GitGutterDelete ctermbg=bg
-highligh GitGutterChangeDelete ctermbg=bg
+highlight GitGutterAdd ctermbg=bg
+highlight GitGutterChange ctermbg=bg
+highlight GitGutterDelete ctermbg=bg
+highlight GitGutterChangeDelete ctermbg=bg
 
 "**Better White Space**
 "Toggle Vim-better-whitespace
