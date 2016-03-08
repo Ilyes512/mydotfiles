@@ -14,7 +14,7 @@ source ~/myvimfiles/vimrc.vim
 Make sure you also install the below system packages:
 
 1. ctags
-  - See the project [universal-ctags/ctags](https://github.com/universal-ctags/ctags))
+  - See the project [universal-ctags/ctags](https://github.com/universal-ctags/ctags)
   - [OSX install guide](https://github.com/universal-ctags/ctags/blob/master/docs/osx.rst)
   - `$ brew tap universal-ctags/universal-ctags && brew install --HEAD universal-ctags`
 2. ac
