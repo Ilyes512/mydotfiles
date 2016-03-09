@@ -167,8 +167,8 @@ augroup END
 
 " Notes
 " - zz will center the screen
-" - zu will move the screen to the top
-" - z<cr> will move the screen to the bottom
+" - zt will move the screen to the top
+" - zb will move the screen to the bottom
 " - <C-D> will scroll the screen down
 " - <C-U> will scroll the screen up
 " - <C-]> will try to find the class/method/property trough ctags
@@ -177,3 +177,17 @@ augroup END
 " - In normal mode you can replace the inside of (), "", [] etc. with
 "   "ci)", 'ci"' and "ci]". Use "ca" instead if you also want to include
 "   the parenthesis (you also use "da" or "di" for deleting).
+" - H, L and M will move the cursor to the top, bottom and middle respectively
+" - ]m and ]M will move you to the start or end of the next method
+" - [m and [M will move you to the previous start or end of the method
+" - :copen opens quickfix
+" - :grep 'string' / :Ag 'string' search recursively for a string
+" - ; and , will move the cursor to the next or previous character respectively after searching for a letter with f
+" - :bufdo bd! Close all buffers
+" - :wa Write all
+" - :qa Close all
+" - :x Save and quit
+" - :mksession session_file_name.vim Save the open session so that you can get back to your list of open files laterA
+" - vim -S session_file_name.vim Restore a session
+" - :tabe filepath open a file in a new tab
+" - :gt and gT or :tabn and :tabp got to the next tab or the previous tab
