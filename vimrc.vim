@@ -1,6 +1,8 @@
 "----------Misc----------
 
-set nocompatible                  "Compatible mode breaks allot of keys like backspace, tab etc.
+if !has('nvim')
+    set nocompatible                  "Compatible mode breaks allot of keys like backspace, tab etc.
+endif
 
 so ~/myvimfiles/vim/plugins.vim   "Include Vundle config
 

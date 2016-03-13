@@ -20,4 +20,8 @@ Make sure you also install the below system packages:
 2. ac
   - See the project [ggreer/the_silver_searcher](https://github.com/ggreer/the_silver_searcher)
   - `$ brew install the_silver_searcher`
+3. Neovim (optional)
+  - See the project [neovim/neovim](https://github.com/neovim/neovim) 
+  - `$ brew install neovim/neovim/neovim`
+  - To load the vimrc-file you need to symlink it to ~/.config/init.vim: `$ mkdir -p ~/.config/nvim && ln -s ~/.vimrc ~/.config/nvim/init.vim` 
 
