@@ -2,6 +2,8 @@
 
 if !has('nvim')
     set nocompatible                  "Compatible mode breaks allot of keys like backspace, tab etc.
+    set ttyfast                       "Send more characters for redraws
+    set ttymouse=xterm2
 endif
 
 so ~/myvimfiles/vim/plugins.vim   "Include Vundle config
