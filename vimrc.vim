@@ -195,5 +195,7 @@ augroup END
 " - :x Save and quit
 " - :mksession session_file_name.vim Save the open session so that you can get back to your list of open files laterA
 " - vim -S session_file_name.vim Restore a session
-" - :tabe filepath open a file in a new tab
+" - :tab e filepath open a file in a new tab
 " - :gt and gT or :tabn and :tabp got to the next tab or the previous tab
+" - :Gsearch Search files and show them in a split buffer. Changes are saved with :Greplace
+"
