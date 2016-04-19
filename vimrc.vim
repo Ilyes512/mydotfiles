@@ -18,6 +18,7 @@ set updatetime=500                "Reduce vim's default update time of 4000 ms
 set mouse=a                       "Enable mouse use in all modes
 set scrolloff=1                   "Stay x amount of rows from the top/bottom when scrolling
 set noerrorbells visualbell t_vb= "This should prevent vim from emitting any terminal 'bell' sounds
+set clipboard=unnamed             "This should link vim's yank to system clipbard (needs more research)
 
 "---------Spacing & Wrapping-----------
 
