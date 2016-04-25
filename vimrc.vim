@@ -1,19 +1,15 @@
 "----------Misc----------
 
 if !has('nvim')
-    set nocompatible                  "Compatible mode breaks allot of keys like backspace, tab etc.
-    set ttyfast                       "Send more characters for redraws
+    set nocompatible              "Compatible mode breaks allot of keys like backspace, tab etc.
+    set ttyfast                   "Send more characters for redraws
     set ttymouse=xterm2
 endif
 
 so ~/myvimfiles/vim/plugins.vim   "Include Vundle config
 
-set timeoutlen=1000 ttimeoutlen=0 "Remove the delay you get when switching out of Insert mode to Normal mode
-set backspace=indent,eol,start    "Make's the backspace behave like in normal editor's
 let mapleader = ','               "The default leader is \, changed to ,
-set tabstop=4                     "When hitting enter it uses a tab of 4 spaces width
-set expandtab                     "Uses spaces for tabs
-set shiftwidth=4                  "When hitting tab it uses a tab of 4 spaces width
+set timeoutlen=1000 ttimeoutlen=0 "Remove the delay you get when switching out of Insert mode to Normal mode
 set updatetime=500                "Reduce vim's default update time of 4000 ms
 set mouse=a                       "Enable mouse use in all modes
 set scrolloff=1                   "Stay x amount of rows from the top/bottom when scrolling
@@ -22,6 +18,10 @@ set clipboard=unnamed             "This should link vim's yank to system clipbar
 
 "---------Spacing & Wrapping-----------
 
+set backspace=indent,eol,start    "Make's the backspace behave like in normal editor's
+set tabstop=4                     "When hitting enter it uses a tab of 4 spaces width
+set expandtab                     "Uses spaces for tabs
+set shiftwidth=4                  "When hitting tab it uses a tab of 4 spaces width
 set wrap                          "Only word wrap visually
 set linebreak                     "Linebreak tells Vim only yo wrap at a character in the breakat option.
 set nolist                        "List disables linebreak
@@ -167,8 +167,8 @@ nnoremap \ :Ag<SPACE>
 
 "Automatically source the Vimrc file on save. The augroup makes sure it's only applied once and prevents vim from freezing
 augroup autosourcing
-	autocmd!
-	autocmd BufWritePost vimrc.vim source %
+    autocmd!
+    autocmd BufWritePost vimrc.vim source %
 augroup END
 
 " Notes
@@ -198,4 +198,4 @@ augroup END
 " - :tab e filepath open a file in a new tab
 " - :gt and gT or :tabn and :tabp got to the next tab or the previous tab
 " - :Gsearch Search files and show them in a split buffer. Changes are saved with :Greplace
-"
+" - <C-6> Toggle between two (last used) files
