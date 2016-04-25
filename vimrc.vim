@@ -48,8 +48,6 @@ highlight LineNr ctermbg=bg
 
 set linespace=0
 let g:solarized_termcolors=256
-let g:airline_theme = 'solarized'
-let g:airline_powerline_fonts = 1
 
 "----------Split Management----------
 
@@ -116,9 +114,12 @@ nmap <C-_> :NERDTreeToggle<cr>
 "let g:auto_save_silent = 1           "Do not display the auto-save notification
 
 "**Vim-airline**
-set laststatus=2                     "Makes sure the vim-airline is always displayed
-set ttimeoutlen=50                   "Removes a potential delay when switching Vim modes
-set noshowmode                       "Removes the default vim status bar
+set laststatus=2                               "Makes sure the vim-airline is always displayed
+set ttimeoutlen=50                             "Removes a potential delay when switching Vim modes
+set noshowmode                                 "Removes the default vim status bar
+let g:airline#extensions#tabline#enabled = 1   "Enables airline styled tabs
+let g:airline_theme = 'tomorrow'
+let g:airline_powerline_fonts = 1
 
 "**GitGutter**
 let g:gitgutter_enabled = 0            "Disable gitgutter by default
@@ -199,3 +200,7 @@ augroup END
 " - :gt and gT or :tabn and :tabp got to the next tab or the previous tab
 " - :Gsearch Search files and show them in a split buffer. Changes are saved with :Greplace
 " - <C-6> Toggle between two (last used) files
+" - :PromptlineSnapshot ~/myvimfiles/.shell_prompt.sh airline Regenerate
+"   prompt theme
+" - :TmuxlineSnapshot ~/myvimfiles/.tmuxline.tmux.conf Regenerate tmuxline
+"   theme

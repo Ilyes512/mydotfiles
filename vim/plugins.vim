@@ -20,6 +20,8 @@ Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'duggiefresh/vim-easydir'
 Plugin 'rking/ag.vim'
 Plugin 'skwp/greplace.vim'
+Bundle 'edkolev/tmuxline.vim'
+Bundle 'edkolev/promptline.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
