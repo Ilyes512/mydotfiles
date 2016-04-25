@@ -121,6 +121,17 @@ let g:airline#extensions#tabline#enabled = 1   "Enables airline styled tabs
 let g:airline_theme = 'tomorrow'
 let g:airline_powerline_fonts = 1
 
+"**Tmuxline**
+let g:tmuxline_preset = {
+  \'a'        : '#S',
+  \'b'        : ['#I:#P', '#F'],
+  \'win'      : '#I| #W',
+  \'cwin'     : '#I| #W',
+  \'x'        : '#(battery -pt)',
+  \'y'        : ['%H:%M %d-%b-%Y'],
+  \'z'        : ['#(whoami)', '#h'],
+  \'options'  : {'status-justify' : 'left'}}
+
 "**GitGutter**
 let g:gitgutter_enabled = 0            "Disable gitgutter by default
 let g:gitgutter_sign_column_always = 1 "Always show the gitgutter column even when there are no git changes
@@ -200,7 +211,7 @@ augroup END
 " - :gt and gT or :tabn and :tabp got to the next tab or the previous tab
 " - :Gsearch Search files and show them in a split buffer. Changes are saved with :Greplace
 " - <C-6> Toggle between two (last used) files
-" - :PromptlineSnapshot ~/myvimfiles/.shell_prompt.sh airline Regenerate
+" - :PromptlineSnapshot! ~/myvimfiles/.shell_prompt.sh airline Regenerate
 "   prompt theme
-" - :TmuxlineSnapshot ~/myvimfiles/.tmuxline.tmux.conf Regenerate tmuxline
+" - :TmuxlineSnapshot! ~/myvimfiles/.tmuxline.tmux.conf Regenerate tmuxline
 "   theme

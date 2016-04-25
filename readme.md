@@ -3,7 +3,7 @@
 1. `$ git clone https://github.com/Ilyes512/myvimfiles ~/myvimfiles`
 2. Install Vundle `$ git clone https://github.com/VundleVim/Vundle.vim.git ~/myvimfiles/vim/bundle/Vundle.vim`.
 3. Start vim `$ vim` (ignoring possible message of missing packages). Press `<Leader>pi` (translates to `,pi`).
-4. Put the below snippet in your `~/.vimrc`.
+4. Put the below snippet in your `~/.vimrc` and `~/.config/nvim/init.vim`.
 5. After restarting vim everything should be ready to go.
 
 ```vim
@@ -23,5 +23,15 @@ Make sure you also install the below system packages:
 3. Neovim (optional)
   - See the project [neovim/neovim](https://github.com/neovim/neovim) 
   - `$ brew install neovim/neovim/neovim`
-  - To load the vimrc-file you need to symlink it to ~/.config/init.vim: `$ mkdir -p ~/.config/nvim && ln -s ~/.vimrc ~/.config/nvim/init.vim` 
+  - To load the vimrc-file you need to symlink it to ~/.config/init.vim: `$ mkdir -p ~/.config/nvim && ln -s ~/.vimrc ~/.config/nvim/init.vim`
+4. Tmux
+  - `$ brew install tmux`
+5. Battery
+  - See the projectt [Goles/Battery](https://github.com/Goles/Battery)
+  - `$ brew tap Goles\battery && brew install battery`
+
+---
+
+### Tip:
+If you use Iterm and Tmux add the fallowing line `tmux attach -t base || tmux new -s base` to `Preferences > Profiles > General > Command > "Send text at start"-input`. This way when you open Iterm, it will automatically start you in a Tmux session.
 
