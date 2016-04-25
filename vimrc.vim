@@ -110,10 +110,10 @@ let NERDTreeHijackNetrw = 0          "NERDTree will not try to replace Netrw
 nmap <C-_> :NERDTreeToggle<cr>
 
 "**AutoSave**
-let g:auto_save = 1                  "Enable AutoSave on Vim startup
-let g:auto_save_no_updatetime = 1    "Do not change the 'updatetime'. This is manually set in this config.
-let g:auto_save_in_insert_mode = 0   "Do not save while in insert mode
-let g:auto_save_silent = 1           "Do not display the auto-save notification
+"let g:auto_save = 1                  "Enable AutoSave on Vim startup
+"let g:auto_save_no_updatetime = 1    "Do not change the 'updatetime'. This is manually set in this config.
+"let g:auto_save_in_insert_mode = 0   "Do not save while in insert mode
+"let g:auto_save_silent = 1           "Do not display the auto-save notification
 
 "**Vim-airline**
 set laststatus=2                     "Makes sure the vim-airline is always displayed
