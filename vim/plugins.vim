@@ -20,6 +20,10 @@ Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'duggiefresh/vim-easydir'
 Plugin 'rking/ag.vim'
 Plugin 'skwp/greplace.vim'
+Plugin 'MarcWeber/vim-addon-mw-utils'      " Required for Snipmate
+Plugin 'tomtom/tlib_vim'                   " Required for Snipmate
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'                " Optional Snipmate snipits
 Bundle 'edkolev/tmuxline.vim'
 Bundle 'edkolev/promptline.vim'
 
