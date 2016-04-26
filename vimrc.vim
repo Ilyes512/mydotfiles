@@ -127,7 +127,7 @@ let g:tmuxline_preset = {
   \'b'        : ['#I:#P', '#F'],
   \'win'      : '#I| #W',
   \'cwin'     : '#I| #W',
-  \'x'        : '#(battery -pt)',
+  \'x'        : '#(battery -pt -g=#eff1f5 -m=#ebcb8b -w=#bf616a)',
   \'y'        : ['%H:%M %d-%b-%Y'],
   \'z'        : ['#(whoami)', '#h'],
   \'options'  : {'status-justify' : 'left'}}
