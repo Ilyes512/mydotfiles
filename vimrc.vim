@@ -6,7 +6,7 @@ if !has('nvim')
     set ttymouse=xterm2
 endif
 
-so ~/myvimfiles/vim/plugins.vim   "Include Vundle config
+so ~/mydotfiles/vim/plugins.vim   "Include Vundle config
 
 let mapleader = ','               "The default leader is \, changed to ,
 set timeoutlen=1000 ttimeoutlen=0 "Remove the delay you get when switching out of Insert mode to Normal mode
@@ -62,9 +62,9 @@ nnoremap <C-L> <C-W><C-L>
 "----------Mappings----------
 
 "Make it easy to edit the .vimrc file
-nmap <Leader>ev :tabedit ~/myvimfiles/vimrc.vim<cr>
+nmap <Leader>ev :tabedit ~/mydotfiles/vimrc.vim<cr>
 "Make it easy to edit the plugins.vim file
-nmap <Leader>ep :tabedit ~/myvimfiles/vim/plugins.vim<cr>
+nmap <Leader>ep :tabedit ~/mydotfiles/vim/plugins.vim<cr>
 
 "This will remove the search highlighting
 nmap <Leader><space> :nohlsearch<cr>
@@ -211,7 +211,7 @@ augroup END
 " - :gt and gT or :tabn and :tabp got to the next tab or the previous tab
 " - :Gsearch Search files and show them in a split buffer. Changes are saved with :Greplace
 " - <C-6> Toggle between two (last used) files
-" - :PromptlineSnapshot! ~/myvimfiles/.shell_prompt.sh airline Regenerate
+" - :PromptlineSnapshot! ~/mydotfiles/.shell_prompt.sh airline Regenerate
 "   prompt theme
-" - :TmuxlineSnapshot! ~/myvimfiles/.tmuxline.tmux.conf Regenerate tmuxline
+" - :TmuxlineSnapshot! ~/mydotfiles/.tmuxline.tmux.conf Regenerate tmuxline
 "   theme
