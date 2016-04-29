@@ -8,25 +8,37 @@ endif
 
 so ~/mydotfiles/vim/plugins.vim   "Include Vundle config
 
-let mapleader = ','               "The default leader is \, changed to ,
-set timeoutlen=1000 ttimeoutlen=0 "Remove the delay you get when switching out of Insert mode to Normal mode
+let mapleader = ','               "The default leader is '\', changed to ','
+set ttimeout                      "Remove the delay you get when switching out of 'Insert'-mode to 'Normal'-mode
+set timeoutlen=1000
 set updatetime=500                "Reduce vim's default update time of 4000 ms
 set mouse=a                       "Enable mouse use in all modes
 set scrolloff=1                   "Stay x amount of rows from the top/bottom when scrolling
+set sidescrolloff=5
 set noerrorbells visualbell t_vb= "This should prevent vim from emitting any terminal 'bell' sounds
 set clipboard=unnamed             "This should link vim's yank to system clipbard (needs more research)
+filetype plugin indent on         "File-type based indentation
+set complete-=i                   "Disables completion from included files (has the potential to be slow. Use ctags instead)
+set wildmenu                      "Enhenced completion
+set autoread                      "Reload file if changed outside of vim, while not changed in Vim
+set history=1000                  "Set the Vim commandline history to x
+set showcmd                       "Display the input for the next command
+
 
 "---------Spacing & Wrapping-----------
 
-set backspace=indent,eol,start    "Make's the backspace behave like in normal editor's
-set tabstop=4                     "When hitting enter it uses a tab of 4 spaces width
-set expandtab                     "Uses spaces for tabs
-set shiftwidth=4                  "When hitting tab it uses a tab of 4 spaces width
-set wrap                          "Only word wrap visually
-set linebreak                     "Linebreak tells Vim only yo wrap at a character in the breakat option.
-set nolist                        "List disables linebreak
-set textwidth=0                   "By setting the wrap with to 0 it is disabled
-set wrapmargin=0                  "The same as textwidth, except it takes the screenwidth into account
+set autoindent
+set backspace=2                    "Make's the backspace behave like in normal editor's
+set smarttab                       "Autodetect settings for shiftwidth, tabstop and softtabstop
+
+"set tabstop=4                     "When hitting enter it uses a tab of 4 spaces width
+"set expandtab                     "Uses spaces for tabs
+"set shiftwidth=4                  "When hitting tab it uses a tab of 4 spaces width
+"set wrap                          "Only word wrap visually
+"set linebreak                     "Linebreak tells Vim only yo wrap at a character in the breakat option.
+"set nolist                        "List disables linebreak
+"set textwidth=0                   "By setting the wrap with to 0 it is disabled
+"set wrapmargin=0                  "The same as textwidth, except it takes the screenwidth into account
 
 "----------Search----------
 
@@ -35,12 +47,16 @@ set incsearch                     "Incrementally highlight, as we type.
 
 "----------Visuals----------
 
-set number                        "Activate's line numbers
-syntax enable                     "Activate's syntax colouring
-let t_Co=256                      "Use 256 colours.
+set number                                "Activate's line numbers
+syntax on                                 "Activate's syntax colouring
+set ruler                                 "Always show the line and column number
+let t_Co=256                              "Use 256 colours.
 let base16colorspace=256
-colorscheme base16-ocean          "The colour scheme (theme)
-set background=dark               "Use the dark background
+colorscheme base16-ocean                  "The colour scheme (theme)
+set background=dark                       "Use the dark background
+set list listchars=tab:»·,trail:·,nbsp:·  "Show marks for trailing whitespace
+set textwidth=90                          "Set the textwidth to 90 and show a line
+set colorcolumn=+2
 "Choose different colors for the linenumbers
 highlight LineNr ctermbg=bg
 
@@ -144,23 +160,23 @@ highlight GitGutterChangeDelete ctermbg=bg
 
 "**Better White Space**
 "Toggle Vim-better-whitespace
-nmap <Leader>sw :ToggleWhitespace<cr>
-"Remove trailing whitespace
-nmap <Leader>rw :StripWhitespace<cr>
+nmap <Leader>tw :ToggleWhitespace<cr>
+"Strip trailing whitespace
+nmap <Leader>sw :StripWhitespace<cr>
 
 "----------The Silver Searcher----------
 if executable('ag')
-    " Use ag over grep
-    set grepprg=ag\ --nogroup\ --nocolor
+  " Use ag over grep
+  set grepprg=ag\ --nogroup\ --nocolor
 
-    " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-    let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
-    " ag is fast enough that CtrlP doesn't need to cache
-    let g:ctrlp_use_caching = 0
+  " ag is fast enough that CtrlP doesn't need to cache
+  let g:ctrlp_use_caching = 0
 
-    " Setup ag for :Gsearch
-    let g:grep_cmd_opts = '--line-numbers --noheading'
+  " Setup ag for :Gsearch
+  let g:grep_cmd_opts = '--line-numbers --noheading'
 endif
 
 nnoremap \ :Ag<SPACE>
@@ -173,9 +189,14 @@ nnoremap \ :Ag<SPACE>
 
 "Automatically source the Vimrc file on save. The augroup makes sure it's only applied once and prevents vim from freezing
 augroup autosourcing
-    autocmd!
-    autocmd BufWritePost vimrc.vim source %
+  autocmd!
+  autocmd BufWritePost vimrc.vim source %
 augroup END
+
+" Local config
+if filereadable($HOME . "/.vimrc.local")
+  source ~/.vimrc.local
+endif
 
 " Notes
 " - zz will center the screen
@@ -209,3 +230,6 @@ augroup END
 "   prompt theme
 " - :TmuxlineSnapshot! ~/mydotfiles/.tmuxline.tmux.conf Regenerate tmuxline
 "   theme
+
+
+" vim:set ft=vim et sw=2:
