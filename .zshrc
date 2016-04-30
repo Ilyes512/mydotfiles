@@ -86,7 +86,7 @@ fi
 [[ -f ~/mydotfiles/.shell_prompt.sh ]] && source ~/mydotfiles/.shell_prompt.sh
 
 # aliases
-[[ -f ~/dotfiles/.aliases ]] && source ~/dotfiles/.aliases
+[[ -f ~/mydotfiles/.aliases ]] && source ~/mydotfiles/.aliases
 
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
