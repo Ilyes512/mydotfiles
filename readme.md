@@ -22,12 +22,15 @@ Make sure you also install the below system packages:
 2. ac
   - The project: [ggreer/the_silver_searcher](https://github.com/ggreer/the_silver_searcher)
   - `$ brew install the_silver_searcher`
-3. tmux
+3. Tmux (v1.9+)
   - TL;DR: `$ brew install tmux`
-4. Battery (going to be optional in the future)
+4. Tmux Plugin Manager (TPM)
+  -  See the project: [tmux-plugins/tpm](https://github.com/tmux-plugins/tpm)
+  -  TL;DR: `$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
+5. Battery (going to be optional in the future)
   - The project: [Goles/Battery](https://github.com/Goles/Battery)
   - `$ brew tap Goles\battery && brew install battery`
-5. (Optional:) Neovim/NVim
+6. (Optional:) Neovim/NVim
   - The project: [neovim/neovim](https://github.com/neovim/neovim) 
   - TL;DR: `$ brew install neovim/neovim/neovim`
   - To load the vimrc-file you need to symlink it to ~/.config/init.vim: `$ mkdir -p ~/.config/nvim && ln -s ~/.vimrc ~/.config/nvim/init.vim`
