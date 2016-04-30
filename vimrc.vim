@@ -29,13 +29,13 @@ set showcmd                       "Display the input for the next command
 
 set autoindent
 set backspace=2                    "Make's the backspace behave like in normal editor's
-set smarttab                       "Autodetect settings for shiftwidth, tabstop and softtabstop
-
-"set tabstop=4                     "When hitting enter it uses a tab of 4 spaces width
-"set expandtab                     "Uses spaces for tabs
-"set shiftwidth=4                  "When hitting tab it uses a tab of 4 spaces width
-"set wrap                          "Only word wrap visually
-"set linebreak                     "Linebreak tells Vim only yo wrap at a character in the breakat option.
+set tabstop=8                      "The maximum width of a tab
+set shiftwidth=4                   "The size of a tab in spaces
+set softtabstop=0                  "When non-zero it will insert a combination of spaces and tabs to simulate tab stop
+set expandtab                      "Uses spaces for tabs
+set smarttab                       "Auto insert spaces or tabs when going to a new line
+"set wrap                          "only word wrap visually
+"set linebreak                     "linebreak tells vim only yo wrap at a character in the breakat option.
 "set nolist                        "List disables linebreak
 "set textwidth=0                   "By setting the wrap with to 0 it is disabled
 "set wrapmargin=0                  "The same as textwidth, except it takes the screenwidth into account
