@@ -231,5 +231,4 @@ endif
 " - :TmuxlineSnapshot! ~/mydotfiles/.tmuxline.tmux.conf Regenerate tmuxline
 "   theme
 
-
 " vim:set ft=vim et sw=2:
