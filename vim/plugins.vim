@@ -5,26 +5,41 @@ set rtp+=~/mydotfiles/vim/bundle/Vundle.vim
 call vundle#begin('~/mydotfiles/vim/bundle')
 
 Plugin 'VundleVim/Vundle.vim'
+
+" Navigation
 Plugin 'tpope/vim-vinegar'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
-Plugin 'elixir-lang/vim-elixir'
-Plugin '2072/PHP-Indenting-for-VIm'
-Plugin 'airblade/vim-gitgutter'
+
+" Util
 Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'chriskempson/base16-vim'
-Plugin 'hashivim/vim-vagrant'
-Plugin 'ntpeters/vim-better-whitespace'
-Plugin 'duggiefresh/vim-easydir'
 Plugin 'rking/ag.vim'
 Plugin 'skwp/greplace.vim'
+Bundle 'edkolev/tmuxline.vim'
+Bundle 'edkolev/promptline.vim'
+Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'duggiefresh/vim-easydir'
+Plugin 'tpope/vim-surround'
+
+" Snipmate
 Plugin 'MarcWeber/vim-addon-mw-utils'      " Required for Snipmate
 Plugin 'tomtom/tlib_vim'                   " Required for Snipmate
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'                " Optional Snipmate snipits
-Bundle 'edkolev/tmuxline.vim'
-Bundle 'edkolev/promptline.vim'
+
+" Theme
+Plugin 'chriskempson/base16-vim'
+Plugin 'vim-airline/vim-airline-themes'
+
+" Elixir
+Plugin 'elixir-lang/vim-elixir'
+
+" PHP
+Plugin '2072/PHP-Indenting-for-VIm'
+Plugin 'airblade/vim-gitgutter'
+
+" Vagrant
+Plugin 'hashivim/vim-vagrant'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
