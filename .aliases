@@ -1,0 +1,21 @@
+# Misc
+alias ll="ls -la"
+alias ..="cd .."
+alias cls="clear"
+
+# Vim
+alias vim="nvim"
+
+# Tmux
+alias tmux='tmux -2 -u'  # for 256color
+alias tnew="tmux new -s"
+alias tattach="tmux attach -t"
+
+# Vagrant
+alias vstart="vagrant up && vagrant ssh"
+
+# Ansible
+alias ansig="ansible-galaxy"
+
+# Include custom aliases
+[[ -f ~/.aliases.local ]] && source ~/.aliases.local

@@ -60,7 +60,6 @@ plugins=(git)
 export PATH="/usr/local/sbin:$PATH:/Users/ilyes512/.composer/vendor/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
-source ~/myvimfiles/.shell_prompt.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -78,26 +77,17 @@ fi
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-# alias mvim="/Applications/MacVim.app/Contents/MacOS/MacVim"
-alias vim="nvim"
-alias vstart="vagrant up && vagrant ssh"
-alias ll="ls -la"
-alias ..="cd .."
-alias ansig="ansible-galaxy"
-alias tnew="tmux new -s"
-alias tattach="tmux attach -t"
-
 # Fixes tmux
 if [ "$TERM" = "xterm" ]; then
   export TERM=xterm-256color
 fi
-alias tmux='tmux -2 -u'  # for 256color
+
+# Shell Prompt
+[[ -f ~/mydotfiles/.shell_prompt.sh ]] && source ~/mydotfiles/.shell_prompt.sh
+
+# aliases
+[[ -f ~/dotfiles/.aliases ]] && source ~/dotfiles/.aliases
+
+# Local config
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 

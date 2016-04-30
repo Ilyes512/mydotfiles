@@ -37,16 +37,27 @@ Make sure you also install the below system packages:
 1. `$ git clone https://github.com/Ilyes512/mydotfiles ~/mydotfiles`
 2. Install Vundle `$ git clone https://github.com/VundleVim/Vundle.vim.git ~/mydotfiles/vim/bundle/Vundle.vim`.
 3. Start Vim `$ vim` (ignoring possible message of missing packages). Press `<Leader>pi` (translates to `,pi`).
-4. Put the below snippet in your `~/.vimrc`.
-5. (Optional:) Set a symbolic link for NVim:  
-   `$ mkdir -p ~/.config/nvim && ln -s ~/.vimrc ~/.config/nvim/init.vim`.
-6. After restarting (N)Vim everything should be ready to go.
+4. Put the below snippet's in there respective files and execute the below commands.
+6. After (re)opening your terminal(/iTerm) everything should be good to go. You might need to (re)source some files e.g. `$ source ~/.zshrc`.
+
+**~/.zshrc**
+
+```bash
+# Load from MyDotFiles
+[[ -f ~/mydotfiles/.zshrc ]] && source ~/mydotfiles/.zshrc
+```
 
 **~/.vimrc**
 
 ```vim
 set runtimepath^=~/mydotfiles/vim
 source ~/mydotfiles/vimrc.vim
+```
+
+**~/.config/nvim/init.vim** (Neovim)
+
+```
+$ mkdir -p ~/.config/nvim && ln -s ~/.vimrc ~/.config/nvim/init.vim
 ```
 
 ## Tips:
