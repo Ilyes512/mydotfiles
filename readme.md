@@ -40,7 +40,6 @@ Make sure you also install the below system packages:
 8. (Optional:) **Neovim** (NVim)
   - The project: [neovim/neovim](https://github.com/neovim/neovim) 
   - TL;DR: `$ brew install neovim/neovim/neovim`
-  - To load the vimrc-file you need to symlink it to ~/.config/init.vim: `$ mkdir -p ~/.config/nvim && ln -s ~/.vimrc ~/.config/nvim/init.vim`
 
 ## Installation
 
@@ -53,7 +52,7 @@ Make sure you also install the below system packages:
 
 ```bash
 # Load from MyDotFiles
-[[ -f ~/mydotfiles/.zshrc ]] && source ~/mydotfiles/.zshrc
+[[ -f ~/mydotfiles/zshrc.conf ]] && source ~/mydotfiles/zshrc.conf
 ```
 
 **~/.vimrc**
