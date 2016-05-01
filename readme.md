@@ -9,7 +9,7 @@
         \/\/            \/                \/                \/     \/ 
 ```
 
-My personal dotfiles setup for ZSH, Vim and tmux for OSX (I will try and make it compatible for use with Ubuntu).
+My personal dotfiles setup for ZSH, VIm and tmux for OSX (I will try and make it compatible for use with Ubuntu).
 
 ## Dependencies
 
@@ -29,7 +29,11 @@ Make sure you also install the below system packages:
   -  TL;DR: `$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
 5. Battery (going to be optional in the future)
   - The project: [Goles/Battery](https://github.com/Goles/Battery)
-  - `$ brew tap Goles\battery && brew install battery`
+  - TL;DR: `$ brew tap Goles\battery && brew install battery`
+6. Gawk
+  - See the project: [Gawk Homepage](https://www.gnu.org/software/gawk/)
+  - TL;DR: `$ brew install gawk`
+  - Used by [tmux-copycat](https://github.com/tmux-plugins/tmux-copycat) plugin
 6. (Optional:) Neovim/NVim
   - The project: [neovim/neovim](https://github.com/neovim/neovim) 
   - TL;DR: `$ brew install neovim/neovim/neovim`
@@ -39,7 +43,7 @@ Make sure you also install the below system packages:
 
 1. `$ git clone https://github.com/Ilyes512/mydotfiles ~/mydotfiles`
 2. Install Vundle `$ git clone https://github.com/VundleVim/Vundle.vim.git ~/mydotfiles/vim/bundle/Vundle.vim`.
-3. Start Vim `$ vim` (ignoring possible message of missing packages). Press `<Leader>pi` (translates to `,pi`).
+3. Start VIm `$ vim` (ignoring possible message of missing packages). Press `<Leader>pi` (translates to `,pi`).
 4. Put the below snippet's in there respective files and execute the below commands.
 6. After (re)opening your terminal(/iTerm) everything should be good to go. You might need to (re)source some files e.g. `$ source ~/.zshrc`.
 
@@ -52,7 +56,7 @@ Make sure you also install the below system packages:
 
 **~/.vimrc**
 
-```vim
+```VIm
 set runtimepath^=~/mydotfiles/vim
 source ~/mydotfiles/vimrc.vim
 ```
