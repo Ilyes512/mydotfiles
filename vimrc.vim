@@ -104,10 +104,10 @@ nmap <Leader>r :!ctags -R<cr>
 
 "----------Plugins----------
 
-"**Vundle**
-"Make it easy to run Vundle's install and update commands
-nmap <Leader>pi :PluginInstall<cr>
-nmap <Leader>pu :PluginUpdate<cr>
+"**Vim-Plug**
+nmap <Leader>pi :PlugInstall<cr>
+nmap <Leader>pu :PlugUpdate<cr>
+nmap <Leader>pc :PlugClean<cr>
 
 "**CtrlP**
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'

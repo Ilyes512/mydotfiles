@@ -15,36 +15,38 @@ My personal dotfiles setup for ZSH, VIm and tmux for OSX (I will try and make it
 
 Make sure you also install the below system packages:
 
-1. ctags
+1. 	**Vim-plug**
+	- See the project [junegunn/vim-plug](https://github.com/junegunn/vim-plug)
+	- TL;DR: `$ curl -fLo ~/mydotfiles/vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
+2. **ctags**
   - See the project [universal-ctags/ctags](https://github.com/universal-ctags/ctags)
   - [OSX install guide](https://github.com/universal-ctags/ctags/blob/master/docs/osx.rst)
   - TL;DR: `$ brew tap universal-ctags/universal-ctags && brew install --HEAD universal-ctags`
-2. ac
+3. (Optional, but recommended:) **ac**
   - The project: [ggreer/the_silver_searcher](https://github.com/ggreer/the_silver_searcher)
   - `$ brew install the_silver_searcher`
-3. Tmux (v1.9+)
+4. **Tmux** (v1.9+)
   - TL;DR: `$ brew install tmux`
-4. Tmux Plugin Manager (TPM)
+5. **Tmux Plugin Manager** (TPM)
   -  See the project: [tmux-plugins/tpm](https://github.com/tmux-plugins/tpm)
   -  TL;DR: `$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
-5. Battery (going to be optional in the future)
+6. **Battery** (going to be optional in the future)
   - The project: [Goles/Battery](https://github.com/Goles/Battery)
   - TL;DR: `$ brew tap Goles\battery && brew install battery`
-6. Gawk
+7. **Gawk**
   - See the project: [Gawk Homepage](https://www.gnu.org/software/gawk/)
   - TL;DR: `$ brew install gawk`
   - Used by [tmux-copycat](https://github.com/tmux-plugins/tmux-copycat) plugin
-6. (Optional:) Neovim/NVim
+8. (Optional:) **Neovim** (NVim)
   - The project: [neovim/neovim](https://github.com/neovim/neovim) 
   - TL;DR: `$ brew install neovim/neovim/neovim`
   - To load the vimrc-file you need to symlink it to ~/.config/init.vim: `$ mkdir -p ~/.config/nvim && ln -s ~/.vimrc ~/.config/nvim/init.vim`
 
 ## Installation
 
-1. `$ git clone https://github.com/Ilyes512/mydotfiles ~/mydotfiles`
-2. Install Vundle `$ git clone https://github.com/VundleVim/Vundle.vim.git ~/mydotfiles/vim/bundle/Vundle.vim`.
-3. Start VIm `$ vim` (ignoring possible message of missing packages). Press `<Leader>pi` (translates to `,pi`).
-4. Put the below snippet's in there respective files and execute the below commands.
+1. Install the dependencies above.
+3. Start VIm `$ vim` (ignoring possible message of missing packages). Press `<Leader>pi` (translates to `,pi`) to install the plugins.
+4. Put the below snippet's in there respective files. Also execute the commands if any are shown.
 6. After (re)opening your terminal(/iTerm) everything should be good to go. You might need to (re)source some files e.g. `$ source ~/.zshrc`.
 
 **~/.zshrc**
@@ -56,7 +58,7 @@ Make sure you also install the below system packages:
 
 **~/.vimrc**
 
-```VIm
+```viml
 set runtimepath^=~/mydotfiles/vim
 source ~/mydotfiles/vimrc.vim
 ```
