@@ -18,7 +18,6 @@ set sidescrolloff=5
 set noerrorbells visualbell t_vb= "This should prevent vim from emitting any terminal 'bell' sounds
 set clipboard=unnamed             "This should link vim's yank to system clipbard (needs more research)
 filetype plugin indent on         "File-type based indentation
-set complete-=i                   "Disables completion from included files (has the potential to be slow. Use ctags instead)
 set wildmenu                      "Enhenced completion
 set autoread                      "Reload file if changed outside of vim, while not changed in Vim
 set history=1000                  "Set the Vim commandline history to x
