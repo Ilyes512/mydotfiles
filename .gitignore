@@ -1,3 +1,4 @@
 vim/plugged/*
 !vim/plugged/.gitkeep
 vim/autoload/plug.vim
+vim/.netrwhist

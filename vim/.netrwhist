@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/ilyes512/Code/Ansible/testingbox/ansible/roles/locale/templates'
-let g:netrw_dirhist_2='/Users/ilyes512/Code/Ansible/testingbox/ansible/roles/locale'
-let g:netrw_dirhist_3='/Users/ilyes512/Code/Ansible/testingbox/ansible/roles/locale/defaults'
-let g:netrw_dirhist_4='/Users/ilyes512/myvimfiles/vim'
