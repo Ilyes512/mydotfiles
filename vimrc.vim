@@ -225,8 +225,6 @@ endif
 " - :gt and gT or :tabn and :tabp got to the next tab or the previous tab
 " - :Gsearch Search files and show them in a split buffer. Changes are saved with :Greplace
 " - <C-6> Toggle between two (last used) files
-" - :PromptlineSnapshot! ~/mydotfiles/.shell_prompt.sh airline Regenerate
-"   prompt theme
 " - :TmuxlineSnapshot! ~/mydotfiles/.tmuxline.tmux.conf Regenerate tmuxline
 "   theme
 

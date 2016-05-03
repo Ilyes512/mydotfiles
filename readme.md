@@ -79,4 +79,4 @@ if-shell "[ -f ~/mydotfiles/tmux.conf ]" 'source ~/mydotfiles/tmux.conf'
 
 ## Tips:
 - If you use iTerm and tmux, add the fallowing line `tmux attach -t base || tmux new -s base` to `Preferences > Profiles > General > Command > "Send text at start"`. This way when you open iTerm, it will automatically start you in a tmux session. You can also use the alias `$ tt` to do this manually.
-
+- Add the fallowing line `export DEFAULT_USER="output_of_whoami_here"` to your `~/.zshrc.local` if you want to remove the `username@computername`-part from your commandline prompt. Run `$ whoami` to find out your username.
