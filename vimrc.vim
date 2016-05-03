@@ -187,16 +187,17 @@ nnoremap \ :Ag<SPACE>
 
 "----------Auto-Commands----------
 
+" Local config
+if filereadable($HOME . "/.vimrc.local")
+  source ~/.vimrc.local
+endif
+
 "Automatically source the Vimrc file on save. The augroup makes sure it's only applied once and prevents vim from freezing
 augroup autosourcing
   autocmd!
   autocmd BufWritePost vimrc.vim source %
 augroup END
 
-" Local config
-if filereadable($HOME . "/.vimrc.local")
-  source ~/.vimrc.local
-endif
 
 " Notes
 " - zz will center the screen
