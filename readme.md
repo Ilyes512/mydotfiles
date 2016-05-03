@@ -38,7 +38,10 @@ Make sure you also install the below system packages:
   - The project: [Gawk Homepage](https://www.gnu.org/software/gawk/)
   - TL;DR: `$ brew install gawk`
   - Used by [tmux-copycat](https://github.com/tmux-plugins/tmux-copycat) plugin
-8. (Optional:) **Neovim** (NVim)
+8. **Powerline fonts**
+  - The project: [powerline/fonts](https://github.com/powerline/fonts)
+  - TL;DR: Clone the repo and execute `$ ./install.sh`.
+9. (Optional:) **Neovim** (NVim)
   - The project: [neovim/neovim](https://github.com/neovim/neovim) 
   - TL;DR: `$ brew install neovim/neovim/neovim`
 
