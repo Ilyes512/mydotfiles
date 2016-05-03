@@ -164,6 +164,34 @@ nmap <Leader>tw :ToggleWhitespace<cr>
 "Strip trailing whitespace
 nmap <Leader>sw :StripWhitespace<cr>
 
+"**VIm PHP Namespace**
+" Add class to 'use' at the top
+function! IPhpInsertUse()
+    call PhpInsertUse()
+    call feedkeys('a',  'n')
+endfunction
+autocmd FileType php inoremap <Leader>n <Esc>:call IPhpInsertUse()<CR>
+autocmd FileType php noremap <Leader>n :call PhpInsertUse()<CR>
+
+" Expand class to fully qualified class
+function! IPhpExpandClass()
+    call PhpExpandClass()
+    call feedkeys('a', 'n')
+endfunction
+autocmd FileType php inoremap <Leader>nf <Esc>:call IPhpExpandClass()<CR>
+autocmd FileType php noremap <Leader>nf :call PhpExpandClass()<CR>
+
+" Sort namespaces
+autocmd FileType php inoremap <Leader>ns <Esc>:call PhpSortUse()<CR>
+autocmd FileType php noremap <Leader>ns :call PhpSortUse()<CR>
+
+"**PHP-VIm**
+"!See Auto-Commands section for the rest!
+function! PhpSyntaxOverride()
+"  hi! def link phpDocTags  phpDefine
+"  hi! def link phpDocParam phpType
+endfunction
+
 "----------The Silver Searcher----------
 if executable('ag')
   " Use ag over grep
@@ -198,6 +226,11 @@ augroup autosourcing
   autocmd BufWritePost vimrc.vim source %
 augroup END
 
+"**PHP-VIm**
+augroup phpSyntaxOverride
+  autocmd!
+  autocmd FileType php call PhpSyntaxOverride()
+augroup END
 
 " Notes
 " - zz will center the screen
