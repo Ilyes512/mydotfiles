@@ -22,7 +22,7 @@ set wildmenu                      "Enhenced completion
 set autoread                      "Reload file if changed outside of vim, while not changed in Vim
 set history=1000                  "Set the Vim commandline history to x
 set showcmd                       "Display the input for the next command
-
+set tags+=tags,tags.vendor        "Define the tags files
 
 "---------Spacing & Wrapping-----------
 
@@ -99,7 +99,8 @@ cmap w!! w !sudo tee > /dev/null %
 "Search with ctags
 nmap <Leader>f :tag<space>
 "Refresh ctags
-nmap <Leader>r :!ctags -R<cr>
+nmap <Leader>r :!ctags -R --exclude=vendor<cr>
+nmap <Leader>rv :!ctags -R -f tags.vendor vendor<cr>
 
 "----------Plugins----------
 
