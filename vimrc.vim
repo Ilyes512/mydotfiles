@@ -105,9 +105,9 @@ nmap <Leader>rv :!ctags -R -f tags.vendor vendor<cr>
 "----------Plugins----------
 
 "**Vim-Plug**
-nmap <Leader>pi :PlugInstall<cr>
-nmap <Leader>pu :PlugUpdate<cr>
-nmap <Leader>pc :PlugClean<cr>
+autocmd FileType vim nmap <Leader>pi :PlugInstall<cr>
+autocmd FileType vim nmap <Leader>pu :PlugUpdate<cr>
+autocmd FileType vim nmap <Leader>pc :PlugClean<cr>
 
 "**CtrlP**
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
