@@ -35,6 +35,9 @@ Plug 'arnaud-lb/vim-php-namespace', { 'for': 'php' }
 " Vagrant
 Plug 'hashivim/vim-vagrant'
 
+" Tmux
+Plug 'christoomey/vim-tmux-navigator'
+
 " Add plugins to &runtimepath
 call plug#end()
 
