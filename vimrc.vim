@@ -59,11 +59,6 @@ set colorcolumn=+2
 "Choose different colors for the linenumbers
 highlight LineNr ctermbg=bg
 
-"----------Gvim----------
-
-set linespace=0
-let g:solarized_termcolors=256
-
 "----------Split Management----------
 
 set splitright                    "Make split default to below
