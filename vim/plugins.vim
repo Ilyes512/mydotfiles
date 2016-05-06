@@ -26,9 +26,11 @@ Plug 'vim-airline/vim-airline-themes'
 " Elixir
 Plug 'elixir-lang/vim-elixir'
 
+" Git
+Plug 'airblade/vim-gitgutter', { 'for': 'php' }
+
 " PHP
 Plug '2072/PHP-Indenting-for-VIm', { 'for': 'php' }
-Plug 'airblade/vim-gitgutter', { 'for': 'php' }
 Plug 'StanAngeloff/php.vim', { 'for': 'php' }
 Plug 'arnaud-lb/vim-php-namespace', { 'for': 'php' }
 
