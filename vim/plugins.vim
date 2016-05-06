@@ -3,7 +3,7 @@ call plug#begin('~/mydotfiles/vim/plugged')
 " Navigation
 Plug 'tpope/vim-vinegar'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 
 " Util
 Plug 'vim-airline/vim-airline'
