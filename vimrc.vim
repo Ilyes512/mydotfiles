@@ -94,7 +94,7 @@ cmap w!! w !sudo tee > /dev/null %
 "Search with ctags
 nmap <Leader>f :tag<space>
 "Refresh ctags
-nmap <Leader>r :!ctags -R --exclude=vendor<cr>
+nmap <Leader>r :!ctags -R --exclude=vendor --exclude=node_modules<cr>
 nmap <Leader>rv :!ctags -R -f tags.vendor vendor<cr>
 
 "----------Plugins----------
