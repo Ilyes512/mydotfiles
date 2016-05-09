@@ -17,6 +17,7 @@ set scrolloff=1                   "Stay x amount of rows from the top/bottom whe
 set sidescrolloff=5
 set noerrorbells visualbell t_vb= "This should prevent vim from emitting any terminal 'bell' sounds
 set clipboard=unnamed             "This should link vim's yank to system clipbard (needs more research)
+filetype plugin on
 filetype plugin indent on         "File-type based indentation
 set wildmenu                      "Enhenced completion
 set autoread                      "Reload file if changed outside of vim, while not changed in Vim
