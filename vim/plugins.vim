@@ -41,6 +41,12 @@ Plug 'hashivim/vim-vagrant'
 " Tmux
 Plug 'christoomey/vim-tmux-navigator'
 
+" Deoplete
+function! DoRemote(arg)
+  UpdateRemotePlugins
+endfunction
+Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
+
 " Add plugins to &runtimepath
 call plug#end()
 
