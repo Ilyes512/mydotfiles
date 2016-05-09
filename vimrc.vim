@@ -217,6 +217,10 @@ let g:deoplete#enable_at_startup = 1
 inoremap <expr><tab>   pumvisible() ? "\<c-n>" : "\<tab>"
 inoremap <expr><s-tab> pumvisible() ? "\<c-p>" : "\<s-tab>"
 
+"**PHP-Documentor-for-VIm**
+let g:pdv_template_dir = $HOME . "/mydotfiles/vim/plugged/pdv/templates"
+nnoremap <Leader>d :call pdv#DocumentCurrentLine()<CR>
+
 "----------The Silver Searcher----------
 if executable('ag')
   " Use ag over grep

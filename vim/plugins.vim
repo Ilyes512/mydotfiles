@@ -16,9 +16,11 @@ Plug 'tpope/vim-surround'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'scrooloose/nerdcommenter'
 
-" Snipmate
+" Templating
 Plug 'MarcWeber/vim-addon-mw-utils' | Plug 'tomtom/tlib_vim' | Plug 'garbas/vim-snipmate'
 Plug 'honza/vim-snippets'                " Optional Snipmate snipits
+Plug 'tobyS/vmustache' | Plug 'tobyS/pdv'
+
 
 " Theme
 Plug 'chriskempson/base16-vim'
