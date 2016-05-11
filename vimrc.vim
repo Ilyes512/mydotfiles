@@ -217,6 +217,14 @@ let g:deoplete#enable_at_startup = 1
 inoremap <expr><tab>   pumvisible() ? "\<c-n>" : "\<tab>"
 inoremap <expr><s-tab> pumvisible() ? "\<c-p>" : "\<s-tab>"
 
+"**UltiSnips**
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<c-s>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+" :UltiSnipsEdit will split vertically
+let g:UltiSnipsEditSplit="vertical"
+
 "**PHP-Documentor-for-VIm**
 let g:pdv_template_dir = $HOME . "/mydotfiles/vim/plugged/pdv/templates"
 nnoremap <Leader>d :call pdv#DocumentCurrentLine()<CR>
