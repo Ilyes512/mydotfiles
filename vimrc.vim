@@ -26,6 +26,7 @@ set autoread                      "Reload file if changed outside of vim, while 
 set history=1000                  "Set the Vim commandline history to x
 set showcmd                       "Display the input for the next command
 set tags+=tags,tags.vendor        "Define the tags files
+set ignorecase                    "Searching is not case sensitive
 
 "---------Spacing & Wrapping-----------
 
