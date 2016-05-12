@@ -131,7 +131,7 @@ nmap <Leader>e :CtrlPMRUFiles<cr>
 "**NERDTree**
 let NERDTreeHijackNetrw = 0          "NERDTree will not try to replace Netrw
 "Toggle NERDTree
-nmap <C-_> :NERDTreeToggle<cr>
+nmap <silent> <C-_> :NERDTreeToggle<cr>
 
 "**Vim-airline**
 set laststatus=2                               "Makes sure the vim-airline is always displayed
