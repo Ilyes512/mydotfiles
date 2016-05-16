@@ -41,7 +41,10 @@ Make sure you also install the below system packages:
 8. **Powerline fonts**
   - The project: [powerline/fonts](https://github.com/powerline/fonts)
   - TL;DR: Clone the repo and execute `$ ./install.sh`.
-9. (Optional:) **Neovim** (NVim)
+9. (Required by Deoplete:) **Neovim Python3 interface**
+  - [Deoplete requirements](https://github.com/Shougo/deoplete.nvim#requirements)
+  - TL;DR: `$ brew install python3 && pip3 install neovim`
+10. (Optional:) **Neovim** (NVim)
   - The project: [neovim/neovim](https://github.com/neovim/neovim) 
   - TL;DR: `$ brew install neovim/neovim/neovim`
 
