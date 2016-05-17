@@ -41,10 +41,15 @@ Make sure you also install the below system packages:
 8. **Powerline fonts**
   - The project: [powerline/fonts](https://github.com/powerline/fonts)
   - TL;DR: Clone the repo and execute `$ ./install.sh`.
-9. (Required by Deoplete:) **Neovim Python3 interface**
+9. **Neovim Python3 interface**
   - [Deoplete requirements](https://github.com/Shougo/deoplete.nvim#requirements)
   - TL;DR: `$ brew install python3 && pip3 install neovim`
-10. (Optional:) **Neovim** (NVim)
+  - Used by [Deoplete.nvim](https://github.com/Shougo/deoplete.nvim)
+10. **PHP-CS-Fixer**
+  - The project: [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer)
+  - TL;DR: `$ brew install homebrew/php/php-cs-fixer`
+  - Used by [vim-php-cs-fixer](https://github.com/stephpy/vim-php-cs-fixer)
+11. (Optional:) **Neovim** (NVim)
   - The project: [neovim/neovim](https://github.com/neovim/neovim) 
   - TL;DR: `$ brew install neovim/neovim/neovim`
 
