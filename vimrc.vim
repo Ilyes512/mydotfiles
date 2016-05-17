@@ -203,10 +203,11 @@ function! PhpSyntaxOverride()
 endfunction
 
 "**VIm-PHP-CS-Fixer**
-let g:php_cs_fixer_level = "psr2"                 " which level ?
-let g:php_cs_fixer_config = "default"             " configuration
+let g:php_cs_fixer_level = "all"                 " which level ?
+"let g:php_cs_fixer_config = "default"             " configuration
+let g:php_cs_fixer_config_file = "/Users/ilyes/mydotfiles/.php_cs"
 let g:php_cs_fixer_php_path = "php"               " Path to PHP
-let g:php_cs_fixer_fixers_list = "align_double_arrow,align_equals,array_element_no_space_before_comma,array_element_white_space_after_comma,double_arrow_multiline_whitespaces,double_arrow_multiline_whitespaces,multiline_array_trailing_commas,extra_empty_lines,function_typehint_space,list_commas,namespace_no_leading_whitespace,new_with_braces,no_empty_lines_after_phpdocs"
+"let g:php_cs_fixer_fixers_list = "align_double_arrow,align_equals,array_element_no_space_before_comma,array_element_white_space_after_comma,double_arrow_multiline_whitespaces,double_arrow_multiline_whitespaces,multiline_array_trailing_commas,extra_empty_lines,function_typehint_space,list_commas,namespace_no_leading_whitespace,new_with_braces,no_empty_lines_after_phpdocs"
 let g:php_cs_fixer_enable_default_mapping = 1     " Enable the mapping by default (<leader>pcd)
 let g:php_cs_fixer_dry_run = 0                    " Call command with dry-run option
 let g:php_cs_fixer_verbose = 0                    " Return the output of command if 1, else an inline information.
