@@ -14,7 +14,7 @@ set timeoutlen=1000
 set updatetime=500                "Reduce vim's default update time of 4000 ms
 set mouse=a                       "Enable mouse use in all modes
 set nowrap                        "Dont wrap long lines
-set scrolloff=5                   "Stay x amount of rows from the top/bottom when scrolling
+set scrolloff=1                   "Stay x amount of rows from the top/bottom when scrolling
 set sidescroll=5                  "Stay x chars from the left or the right
 set sidescrolloff=1               "When scrolling horizontally, do so by a number of x chars
 set noerrorbells visualbell t_vb= "This should prevent vim from emitting any terminal 'bell' sounds
