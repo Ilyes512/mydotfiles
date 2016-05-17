@@ -1,8 +1,16 @@
 <?php
 
+/**
+ * Note:
+ * `-psr0` was added because laravel does not adhere to psr0. It kept changing `use
+ * App\...` to `use app\...`. See https://github.com/benmatselby/sublime-phpcs/issues/135
+ * for more info.
+ */
+
 return \Symfony\CS\Config\Config::create()
     ->level(Symfony\CS\FixerInterface::PSR2_LEVEL)
     ->fixers([
+        '-psr0',
         'align_double_arrow',
         'align_equals',
         'array_element_no_space_before_comma',
