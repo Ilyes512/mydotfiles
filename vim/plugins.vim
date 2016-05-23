@@ -21,7 +21,6 @@ Plug 'vim-scripts/TagHighlight'
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 Plug 'tobyS/vmustache' | Plug 'tobyS/pdv'
 
-
 " Theme
 Plug 'chriskempson/base16-vim'
 Plug 'vim-airline/vim-airline-themes'
@@ -43,6 +42,9 @@ Plug 'hashivim/vim-vagrant'
 
 " Tmux
 Plug 'christoomey/vim-tmux-navigator'
+
+" Additional Text Objects
+Plug 'vim-scripts/argtextobj.vim'
 
 " Deoplete
 function! DoRemote(arg)
