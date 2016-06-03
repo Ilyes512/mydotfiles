@@ -306,7 +306,7 @@ augroup END
 " - :gt and gT or :tabn and :tabp got to the next tab or the previous tab
 " - :Gsearch Search files and show them in a split buffer. Changes are saved with :Greplace
 " - <C-6> Toggle between two (last used) files
-" - :TmuxlineSnapshot! ~/mydotfiles/.tmuxline.tmux.conf Regenerate tmuxline
+" - :TmuxlineSnapshot! ~/mydotfiles/tmuxline.conf Regenerate tmuxline
 "   theme
 
 " vim:set ft=vim et sw=2:
