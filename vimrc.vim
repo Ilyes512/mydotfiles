@@ -8,7 +8,7 @@ endif
 
 so ~/mydotfiles/vim/plugins.vim   "Include Vundle config
 
-let mapleader = ' '               "The default leader is '\'
+let mapleader = ','               "The default leader is '\'
 set ttimeout                      "Remove the delay you get when switching out of 'Insert'-mode to 'Normal'-mode
 set timeoutlen=1000
 set updatetime=500                "Reduce vim's default update time of 4000 ms
