@@ -15,43 +15,46 @@ My personal dotfiles setup for ZSH, VIm and tmux for OSX (I will try and make it
 
 Make sure you also install the below system packages:
 
-1. 	**Vim-plug**
-  - The project: [junegunn/vim-plug](https://github.com/junegunn/vim-plug)
-  - TL;DR: `$ curl -fLo ~/mydotfiles/vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
-2. **ctags**
-  - The project: [universal-ctags/ctags](https://github.com/universal-ctags/ctags)
-  - [OSX install guide](https://github.com/universal-ctags/ctags/blob/master/docs/osx.rst)
-  - TL;DR: `$ brew tap universal-ctags/universal-ctags && brew install --HEAD universal-ctags`
-3. (Optional, but recommended:) **ac**
-  - The project: [ggreer/the_silver_searcher](https://github.com/ggreer/the_silver_searcher)
-  - `$ brew install the_silver_searcher`
-4. **Tmux** (v1.9+)
-  - The project: [tmux Homepage](https://tmux.github.io/)
-  - TL;DR: `$ brew install tmux`
-5. **Tmux Plugin Manager** (TPM)
-  - The project: [tmux-plugins/tpm](https://github.com/tmux-plugins/tpm)
-  - TL;DR: `$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
-6. **Battery** (going to be optional in the future)
-  - The project: [Goles/Battery](https://github.com/Goles/Battery)
-  - TL;DR: `$ brew tap Goles\battery && brew install battery`
-7. **Gawk**
-  - The project: [Gawk Homepage](https://www.gnu.org/software/gawk/)
-  - TL;DR: `$ brew install gawk`
-  - Used by [tmux-copycat](https://github.com/tmux-plugins/tmux-copycat) plugin
-8. **Powerline fonts**
+1. **Powerline fonts**
   - The project: [powerline/fonts](https://github.com/powerline/fonts)
   - TL;DR: Clone the repo and execute `$ ./install.sh`.
-9. **Neovim Python3 interface**
+2. **Neovim** (NVim)
+  - The project: [neovim/neovim](https://github.com/neovim/neovim) 
+  - TL;DR: `$ brew install neovim/neovim/neovim`
+3. **Neovim Python3 interface**
   - [Deoplete requirements](https://github.com/Shougo/deoplete.nvim#requirements)
   - TL;DR: `$ brew install python3 && pip3 install neovim`
   - Used by [Deoplete.nvim](https://github.com/Shougo/deoplete.nvim)
-10. **PHP-CS-Fixer**
+4. **PHP-CS-Fixer**
   - The project: [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer)
   - TL;DR: `$ brew install homebrew/php/php-cs-fixer`
   - Used by [vim-php-cs-fixer](https://github.com/stephpy/vim-php-cs-fixer)
-11. (Optional:) **Neovim** (NVim)
-  - The project: [neovim/neovim](https://github.com/neovim/neovim) 
-  - TL;DR: `$ brew install neovim/neovim/neovim`
+5. 	**Vim-plug**
+  - The project: [junegunn/vim-plug](https://github.com/junegunn/vim-plug)
+  - TL;DR: `$ curl -fLo ~/mydotfiles/vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
+6. **ctags**
+  - The project: [universal-ctags/ctags](https://github.com/universal-ctags/ctags)
+  - [OSX install guide](https://github.com/universal-ctags/ctags/blob/master/docs/osx.rst)
+  - TL;DR: `$ brew tap universal-ctags/universal-ctags && brew install --HEAD universal-ctags`
+7. (Optional, but recommended:) **ac**
+  - The project: [ggreer/the_silver_searcher](https://github.com/ggreer/the_silver_searcher)
+  - `$ brew install the_silver_searcher`
+8. **Tmux** (v1.9+)
+  - The project: [tmux Homepage](https://tmux.github.io/)
+  - TL;DR: `$ brew install tmux`
+9. **Battery** (going to be optional in the future)
+  - The project: [Goles/Battery](https://github.com/Goles/Battery)
+  - TL;DR: `$ brew tap Goles\battery && brew install battery`
+10. **Gawk**
+  - The project: [Gawk Homepage](https://www.gnu.org/software/gawk/)
+  - TL;DR: `$ brew install gawk`
+  - Used by [tmux-copycat](https://github.com/tmux-plugins/tmux-copycat) plugin
+11. **Tmux Plugin Manager** (TPM)
+  - The project: [tmux-plugins/tpm](https://github.com/tmux-plugins/tpm)
+  - TL;DR: `$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
+12. **Tmuxinator**
+  - The project: [tmuxinator/tmuxinator](https://github.com/tmuxinator/tmuxinator)
+  - TL;DR: `$ gem install tmuxinator`
 
 ## Installation
 
