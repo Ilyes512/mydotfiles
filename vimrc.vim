@@ -135,19 +135,33 @@ set laststatus=2                               "Makes sure the vim-airline is al
 set ttimeoutlen=50                             "Removes a potential delay when switching Vim modes
 set noshowmode                                 "Removes the default vim status bar
 let g:airline#extensions#tabline#enabled = 1   "Enables airline styled tabs
+let g:airline#extensions#tmuxline#enabled = 0  "Dont auto-theme the tmuxline
 let g:airline_theme = 'tomorrow'
 let g:airline_powerline_fonts = 1
 
 "**Tmuxline**
 let g:tmuxline_preset = {
-  \'a'        : '#S',
-  \'b'        : ['#I:#P', '#F'],
-  \'win'      : '#I| #W',
-  \'cwin'     : '#I| #W',
-  \'x'        : '#(battery -pt -g=#eff1f5 -m=#ebcb8b -w=#bf616a)',
-  \'y'        : ['%H:%M %d-%b-%Y'],
-  \'z'        : ['#(whoami)', '#h'],
-  \'options'  : {'status-justify' : 'left'}}
+  \ 'a'        : '#S',
+  \ 'b'        : ['#I:#P', '#F'],
+  \ 'win'      : '#I| #W',
+  \ 'cwin'     : '#I| #W',
+  \ 'x'        : '#(battery -pt -g=#eff1f5 -m=#ebcb8b -w=#bf616a)',
+  \ 'y'        : ['%d-%b-%Y %H:%M'],
+  \ 'z'        : ['#(whoami)', '#h'],
+  \ 'options'  : {'status-justify' : 'left'},
+  \ }
+
+let g:tmuxline_theme = {
+  \ 'a'    : [ 19, 4, 'bold' ],
+  \ 'b'    : [ 20, 19 ],
+  \ 'c'    : [ 20, 18 ],
+  \ 'x'    : [ 20, 18 ],
+  \ 'y'    : [ 20, 19 ],
+  \ 'z'    : [ 19, 4 ],
+  \ 'win'  : [ 20, 18 ],
+  \ 'cwin' : [ 19, 4 , 'bold' ],
+  \ 'bg'   : [ 20, 18 ],
+  \ }
 
 "**GitGutter**
 let g:gitgutter_enabled = 0            "Disable gitgutter by default
