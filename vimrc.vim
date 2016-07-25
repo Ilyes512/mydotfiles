@@ -28,6 +28,13 @@ set showcmd                       "Display the input for the next command
 set tags+=tags,tags.vendor        "Define the tags files
 set ignorecase                    "Searching is not case sensitive
 
+"---------Autoreload changed files-----------
+
+" Reload when entering the buffer or gaining focus
+au FocusGained,BufEnter * :silent! !
+" Save when exiting the buffer or losing focus
+au FocusLost,WinLeave * :silent! w
+
 "---------Spacing & Wrapping-----------
 
 set autoindent
