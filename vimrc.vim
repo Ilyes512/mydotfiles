@@ -242,11 +242,14 @@ inoremap <expr><s-tab> pumvisible() ? "\<c-p>" : "\<s-tab>"
 
 "**UltiSnips**
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<c-s>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsExpandTrigger="<C-S>"
+let g:UltiSnipsJumpForwardTrigger="<C-F>"
+let g:UltiSnipsJumpBackwardTrigger="<C-B>"
 " :UltiSnipsEdit will split vertically
 let g:UltiSnipsEditSplit="vertical"
+
+"**Emmet**
+let g:user_emmet_leader_key='<c-e>'
 
 "**PHP-Documentor-for-VIm**
 let g:pdv_template_dir = $HOME . "/mydotfiles/vim/plugged/pdv/templates"

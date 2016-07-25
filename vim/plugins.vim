@@ -19,7 +19,7 @@ Plug 'vim-scripts/TagHighlight'
 
 " Templating
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-Plug 'tobyS/vmustache' | Plug 'tobyS/pdv'
+Plug 'mattn/emmet-vim'
 
 " Theme
 Plug 'chriskempson/base16-vim'
@@ -32,10 +32,18 @@ Plug 'elixir-lang/vim-elixir'
 Plug 'airblade/vim-gitgutter', { 'for': 'php' }
 
 " PHP
+" PHP Documentor for Vim
+Plug 'tobyS/vmustache' | Plug 'tobyS/pdv', { 'for': 'php' }
 Plug '2072/PHP-Indenting-for-VIm', { 'for': 'php' }
 Plug 'StanAngeloff/php.vim', { 'for': 'php' }
 Plug 'arnaud-lb/vim-php-namespace', { 'for': 'php' }
 Plug 'stephpy/vim-php-cs-fixer', { 'for': 'php' }
+
+" JavaScript
+Plug 'othree/yajs.vim', { 'for': 'javascript' }
+
+" TypeScript
+Plug 'HerringtonDarkholme/yats.vim', { 'for': 'typescript' }
 
 " Vagrant
 Plug 'hashivim/vim-vagrant'
