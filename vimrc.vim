@@ -233,19 +233,19 @@ nnoremap <silent><leader>l :call PhpCsFixerFixFile()<CR>
 " This is a temp fix for: https://github.com/neovim/neovim/issues/2294
 " Also see this comment: https://github.com/neovim/neovim/issues/2294#issuecomment-78045837
 if has('nvim')
-  "nmap <bs> :<c-u>TmuxNavigateLeft<cr>
+  "nmap <bs> :<C-U>TmuxNavigateLeft<cr>
   let g:tmux_navigator_no_mappings = 1
-  nnoremap <silent> <c-j> :TmuxNavigateDown<cr>
-  nnoremap <silent> <c-k> :TmuxNavigateUp<cr>
-  nnoremap <silent> <c-l> :TmuxNavigateRight<cr>
-  nnoremap <silent> <c-h> :TmuxNavigateLeft<cr>
-  nnoremap <silent> <c-\\> :TmuxNavigatePrevious<cr>
+  nnoremap <silent> <C-J> :TmuxNavigateDown<cr>
+  nnoremap <silent> <C-K> :TmuxNavigateUp<cr>
+  nnoremap <silent> <C-L> :TmuxNavigateRight<cr>
+  nnoremap <silent> <C-H> :TmuxNavigateLeft<cr>
+  nnoremap <silent> <C-\\> :TmuxNavigatePrevious<cr>
 endif
 
 "**Deoplete**
 let g:deoplete#enable_at_startup = 1
-inoremap <expr><tab>   pumvisible() ? "\<c-n>" : "\<tab>"
-inoremap <expr><s-tab> pumvisible() ? "\<c-p>" : "\<s-tab>"
+inoremap <expr><tab>   pumvisible() ? "\<C-N>" : "\<tab>"
+inoremap <expr><s-tab> pumvisible() ? "\<C-P>" : "\<s-tab>"
 
 "**UltiSnips**
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
@@ -256,7 +256,7 @@ let g:UltiSnipsJumpBackwardTrigger="<C-B>"
 let g:UltiSnipsEditSplit="vertical"
 
 "**Emmet**
-let g:user_emmet_leader_key='<c-e>'
+let g:user_emmet_leader_key='<C-E>'
 
 "**PHP-Documentor-for-VIm**
 let g:pdv_template_dir = $HOME . "/mydotfiles/vim/plugged/pdv/templates"
