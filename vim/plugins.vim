@@ -48,6 +48,9 @@ Plug 'HerringtonDarkholme/yats.vim', { 'for': 'typescript' }
 " Vagrant
 Plug 'hashivim/vim-vagrant'
 
+" Ansible
+Plug 'pearofducks/ansible-vim', { 'for': 'ansible' }
+
 " Tmux
 Plug 'christoomey/vim-tmux-navigator'
 
