@@ -65,7 +65,7 @@ let base16colorspace=256
 colorscheme base16-ocean                  "The colour scheme (theme)
 set background=dark                       "Use the dark background
 set list listchars=tab:»·,trail:·,nbsp:·  "Show marks for trailing whitespace
-set textwidth=90                          "Set the textwidth to 90 and show a line
+set textwidth=110                         "Set the textwidth to <int> and show a line
 set colorcolumn=+2
 "Choose different colors for the linenumbers
 highlight LineNr ctermbg=bg
