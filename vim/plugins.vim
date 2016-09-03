@@ -26,6 +26,7 @@ Plug 'mattn/emmet-vim'
 Plug 'chriskempson/base16-vim'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-scripts/TagHighlight'
+Plug 'ilyes512/darkspace.vim'
 
 " Additional Text Objects
 Plug 'vim-scripts/argtextobj.vim'
