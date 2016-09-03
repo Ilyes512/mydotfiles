@@ -41,6 +41,9 @@ Plug 'christoomey/vim-tmux-navigator'
 " Programming Language Specific Plugins
 " ------------------------------------------------------------------------------------------------------------
 
+" A collection of language packs
+Plug 'sheerun/vim-polyglot'
+
 " Elixir
 Plug 'elixir-lang/vim-elixir'
 
