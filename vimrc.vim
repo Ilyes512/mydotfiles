@@ -62,7 +62,7 @@ syntax on                                 "Activate's syntax colouring
 set ruler                                 "Always show the line and column number
 let t_Co=256                              "Use 256 colours.
 let base16colorspace=256
-colorscheme base16-ocean                  "The colour scheme (theme)
+colorscheme darkspace                     "The colour scheme (theme)
 set background=dark                       "Use the dark background
 set list listchars=tab:»·,trail:·,nbsp:·  "Show marks for trailing whitespace
 set textwidth=110                         "Set the textwidth to <int> and show a line
