@@ -6,34 +6,45 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'ctrlpvim/ctrlp.vim'
 
 " Util
-Plug 'vim-airline/vim-airline'
 Plug 'rking/ag.vim'
 Plug 'skwp/greplace.vim'
-Plug 'edkolev/tmuxline.vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'duggiefresh/vim-easydir'
 Plug 'tpope/vim-surround'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'scrooloose/nerdcommenter'
-Plug 'vim-scripts/TagHighlight'
+
+" GUI
+Plug 'vim-airline/vim-airline'
+Plug 'edkolev/tmuxline.vim'
 
 " Templating
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 Plug 'mattn/emmet-vim'
 
-" Theme
+" Theme/Coloring
 Plug 'chriskempson/base16-vim'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-scripts/TagHighlight'
 
-" Elixir
-Plug 'elixir-lang/vim-elixir'
+" Additional Text Objects
+Plug 'vim-scripts/argtextobj.vim'
 
 " Git
 Plug 'airblade/vim-gitgutter', { 'for': 'php' }
 
+" Tmux
+Plug 'christoomey/vim-tmux-navigator'
+
+" ------------------------------------------------------------------------------------------------------------
+" Programming Language Specific Plugins
+" ------------------------------------------------------------------------------------------------------------
+
+" Elixir
+Plug 'elixir-lang/vim-elixir'
+
 " PHP
-" PHP Documentor for Vim
-Plug 'tobyS/vmustache' | Plug 'tobyS/pdv', { 'for': 'php' }
+Plug 'tobyS/vmustache' | Plug 'tobyS/pdv', { 'for': 'php' } " PHP Documentor for Vim
 Plug '2072/PHP-Indenting-for-VIm', { 'for': 'php' }
 Plug 'StanAngeloff/php.vim', { 'for': 'php' }
 Plug 'arnaud-lb/vim-php-namespace', { 'for': 'php' }
@@ -50,12 +61,6 @@ Plug 'hashivim/vim-vagrant'
 
 " Ansible
 Plug 'pearofducks/ansible-vim', { 'for': 'ansible' }
-
-" Tmux
-Plug 'christoomey/vim-tmux-navigator'
-
-" Additional Text Objects
-Plug 'vim-scripts/argtextobj.vim'
 
 " Deoplete
 function! DoRemote(arg)
