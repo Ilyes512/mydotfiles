@@ -216,8 +216,8 @@ autocmd FileType php noremap <Leader>ns :call PhpSortUse()<CR>
 "**PHP-VIm**
 "!See Auto-Commands section for the rest!
 function! PhpSyntaxOverride()
-"  hi! def link phpDocTags  phpDefine
-"  hi! def link phpDocParam phpType
+  hi! def link phpDocTags phpKeyword
+  hi! def link phpDocParam phpType
 endfunction
 
 "**VIm-PHP-CS-Fixer**
