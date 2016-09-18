@@ -29,30 +29,38 @@ Make sure you also install the below system packages:
   - The project: [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer)
   - TL;DR: `$ brew install homebrew/php/php-cs-fixer`
   - Used by [vim-php-cs-fixer](https://github.com/stephpy/vim-php-cs-fixer)
-5. 	**Vim-plug**
+5. **PHP-Code-Sniffer**
+  - The project: [PHP-CS-Fixer](https://github.com/squizlabs/PHP_CodeSniffer)
+  - TL;DR: `$ brew install php-code-sniffer`
+  - Used by [Neomake](https://github.com/neomake/neomake)
+6. **PHPMD**
+  - The project: [PHPMD](https://github.com/phpmd/phpmd)
+  - TL;DR: `$ brew install phpmd`
+  - Used by [Neomake](https://github.com/neomake/neomake)
+7. 	**Vim-plug**
   - The project: [junegunn/vim-plug](https://github.com/junegunn/vim-plug)
   - TL;DR: `$ curl -fLo ~/mydotfiles/vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
-6. **ctags**
+8. **ctags**
   - The project: [universal-ctags/ctags](https://github.com/universal-ctags/ctags)
   - [OSX install guide](https://github.com/universal-ctags/ctags/blob/master/docs/osx.rst)
   - TL;DR: `$ brew tap universal-ctags/universal-ctags && brew install --HEAD universal-ctags`
-7. (Optional, but recommended:) **ac**
+9. **ac** (Optional)
   - The project: [ggreer/the_silver_searcher](https://github.com/ggreer/the_silver_searcher)
   - `$ brew install the_silver_searcher`
-8. **Tmux** (v1.9+)
+10. **Tmux** (v1.9+)
   - The project: [tmux Homepage](https://tmux.github.io/)
   - TL;DR: `$ brew install tmux`
-9. **Battery** (going to be optional in the future)
+11. **Battery** (going to be optional in the future)
   - The project: [Goles/Battery](https://github.com/Goles/Battery)
   - TL;DR: `$ brew tap Goles\battery && brew install battery`
-10. **Gawk**
+12. **Gawk**
   - The project: [Gawk Homepage](https://www.gnu.org/software/gawk/)
   - TL;DR: `$ brew install gawk`
   - Used by [tmux-copycat](https://github.com/tmux-plugins/tmux-copycat) plugin
-11. **Tmux Plugin Manager** (TPM)
+13. **Tmux Plugin Manager** (TPM)
   - The project: [tmux-plugins/tpm](https://github.com/tmux-plugins/tpm)
   - TL;DR: `$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
-12. **Tmuxinator**
+14. **Tmuxinator**
   - The project: [tmuxinator/tmuxinator](https://github.com/tmuxinator/tmuxinator)
   - TL;DR: `$ gem install tmuxinator`
 

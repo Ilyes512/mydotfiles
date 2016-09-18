@@ -268,6 +268,9 @@ nnoremap <Leader>d :call pdv#DocumentCurrentLine()<CR>
 "**Tagbar**
 nmap <Leader>t :TagbarToggle<CR>
 
+"**Neomake**
+let g:neomake_php_phpcs_args_standard="PSR2"
+
 "----------The Silver Searcher----------
 if executable('ag')
   " Use ag over grep
@@ -289,6 +292,10 @@ nnoremap \ :Ag<SPACE>
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
+
+"----------Auto-Commands----------
+
+autocmd! BufWritePost * Neomake
 
 "Automatically source the Vimrc file on save. The augroup makes sure it's only applied once and prevents vim from freezing
 augroup autosourcing

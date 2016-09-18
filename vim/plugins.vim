@@ -15,6 +15,7 @@ Plug 'tpope/vim-surround'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'scrooloose/nerdcommenter'
 Plug 'vim-scripts/SearchComplete'
+Plug 'neomake/neomake'
 
 " GUI
 Plug 'vim-airline/vim-airline'
