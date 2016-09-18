@@ -224,9 +224,11 @@ endfunction
 "**VIm-PHP-CS-Fixer**
 let g:php_cs_fixer_level = "all"                  " which level ? Needs to be 'all' if you want to use config file
 let g:php_cs_fixer_config_file = $HOME . "/mydotfiles/php_cs.php"
-let g:php_cs_fixer_enable_default_mapping = 1     " Enable the mapping by default (<leader>pcd)
+let g:php_cs_fixer_enable_default_mapping = 0     " Enable the default mappings
 let g:php_cs_fixer_dry_run = 0                    " Call command with dry-run option
 let g:php_cs_fixer_verbose = 0                    " Return the output of command if 1, else an inline information.
+nnoremap <silent><leader>pcd :wa \| call PhpCsFixerFixDirectory()<CR>
+nnoremap <silent><leader>pcf :update \| call PhpCsFixerFixFile()<CR>
 nnoremap <silent><leader>ld :call PhpCsFixerFixDirectory()<CR>
 nnoremap <silent><leader>l :call PhpCsFixerFixFile()<CR>
 
