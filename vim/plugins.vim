@@ -4,6 +4,7 @@ call plug#begin('~/mydotfiles/vim/plugged')
 Plug 'tpope/vim-vinegar'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'majutsushi/tagbar'
 
 " Util
 Plug 'rking/ag.vim'
