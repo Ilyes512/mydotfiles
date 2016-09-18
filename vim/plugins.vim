@@ -14,6 +14,7 @@ Plug 'duggiefresh/vim-easydir'
 Plug 'tpope/vim-surround'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'scrooloose/nerdcommenter'
+Plug 'vim-scripts/SearchComplete'
 
 " GUI
 Plug 'vim-airline/vim-airline'
