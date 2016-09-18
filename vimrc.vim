@@ -27,6 +27,7 @@ set history=1000                  "Set the Vim commandline history to x
 set showcmd                       "Display the input for the next command
 set tags+=tags,tags.vendor        "Define the tags files
 set ignorecase                    "Searching is not case sensitive
+set lazyredraw
 
 "---------Autoreload changed files-----------
 
@@ -279,13 +280,8 @@ endif
 
 nnoremap \ :Ag<SPACE>
 
-"----------Syntax----------
 
-"autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
-
-"----------Auto-Commands----------
-
-" Local config
+"----------Local config----------
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
