@@ -265,6 +265,9 @@ let g:user_emmet_leader_key='<C-E>'
 let g:pdv_template_dir = $HOME . "/mydotfiles/vim/plugged/pdv/templates"
 nnoremap <Leader>d :call pdv#DocumentCurrentLine()<CR>
 
+"**Tagbar**
+nmap <Leader>t :TagbarToggle<CR>
+
 "----------The Silver Searcher----------
 if executable('ag')
   " Use ag over grep
