@@ -63,6 +63,14 @@ Make sure you also install the below system packages:
 14. **Tmuxinator**
   - The project: [tmuxinator/tmuxinator](https://github.com/tmuxinator/tmuxinator)
   - TL;DR: `$ gem install tmuxinator`
+15. **Msgpack**
+  - The project: [msgpack/msgpack-php](https://github.com/msgpack/msgpack-php)
+  - TL;DR: `$ brew install homebrew/php/php70-msgpack`
+  - Used by [phpcd.vim](https://github.com/phpvim/phpcd.vim) plugin
+16. **PCNTL (Process Control)**
+  - The project: [PHP PCNTL Doc](http://php.net/manual/en/book.pcntl.php)
+  - TL;DR: `brew install homebrew/php/php70-pcntl`
+  - Used by [phpcd.vim](https://github.com/phpvim/phpcd.vim) plugin
 
 ## Installation
 
