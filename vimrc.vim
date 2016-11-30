@@ -299,7 +299,7 @@ endif
 autocmd! BufWritePost * Neomake
 
 "Phpcd
-autocmd FileType php setlocal omnifunc=phpcd#CompletePHP
+"autocmd FileType php setlocal omnifunc=phpcd#CompletePHP
 
 "Automatically source the Vimrc file on save. The augroup makes sure it's only applied once and prevents vim from freezing
 augroup autosourcing
