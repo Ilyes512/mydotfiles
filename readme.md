@@ -71,6 +71,10 @@ Make sure you also install the below system packages:
   - The project: [PHP PCNTL Doc](http://php.net/manual/en/book.pcntl.php)
   - TL;DR: `brew install homebrew/php/php70-pcntl`
   - Used by [phpcd.vim](https://github.com/phpvim/phpcd.vim) plugin
+17. **reattach-to-user-namespace**
+  - The project: [ChrisJohnsen/tmux-MacOSX-pasteboard.git](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard.git)
+  - TL;DR: `$ brew install reattach-to-user-namespace`
+  - This provides the ability to share the yank with the systems clipboard.
 
 ## Installation
 
