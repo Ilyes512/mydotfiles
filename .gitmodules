@@ -1,3 +1,6 @@
 [submodule "phpstorm/tmbundles/base16.tmbundle"]
 	path = phpstorm/tmbundles/base16.tmbundle
 	url = https://github.com/chriskempson/base16-textmate
+[submodule "phpstorm/tmbundles/ruby.tmbundle"]
+	path = phpstorm/tmbundles/ruby.tmbundle
+	url = https://github.com/textmate/ruby.tmbundle
