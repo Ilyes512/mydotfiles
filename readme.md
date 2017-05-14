@@ -119,10 +119,11 @@ Make sure you also install the below system packages:
 
 ## Installation
 
-1. Install the dependencies above.
-2. Start VIm `$ vim` (ignoring possible message of missing packages). Press `<Leader>pi` (translates to `,pi`) to install the plugins.
-3. Start tmux `$ tmux` and press `prefix + I` (translates to `ctrl-a` followed by `shift-i`) to install the plugins.
-4. Put the below snippet's in there respective files. Also execute the commands if any are shown.
+1. Clone the repositroy: `$ git clone https://github.com/Ilyes512/mydotfiles ~/mydotfiles --recursive`
+2. Install the dependencies above.
+3. Start VIm `$ vim` (ignoring possible message of missing packages). Press `<Leader>pi` (translates to `,pi`) to install the plugins.
+4. Start tmux `$ tmux` and press `prefix + I` (translates to `ctrl-a` followed by `shift-i`) to install the plugins.
+5. Put the below snippet's in there respective files. Also execute the commands if any are shown.
 6. After (re)opening your terminal(/iTerm) everything should be good to go. You might need to (re)source some files e.g. `$ source ~/.zshrc`.
 
 **~/.zshrc**
