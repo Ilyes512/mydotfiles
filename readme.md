@@ -23,16 +23,13 @@ Make sure you also install the below system packages:
 2. **Homebrew Cask** (Package sub0manager for GUI)
     - The project: [caskroom/homebrew-cask](https://github.com/caskroom/homebrew-cask)
     - TL;DR: `$ brew tap caskroom/cask`
-3. **Homebrew command-not-found**
-    - The project: [Homebrew/homebrew-command-not-found)](https://github.com/Homebrew/homebrew-command-not-found)
-    - TL;DR: `$ brew tap homebrew/command-not-found`
-4. **Python3**
+3. **Python3**
     - The project: [Python Homepage)](https://python.org/) 
     - `$ brew install python3`
-5. **GNU coreutils**
+4. **GNU coreutils**
     - The project: [GNU core utilities](http://www.gnu.org/software/coreutils/coreutils.html)
     - TL;DR: `$ brew install coreutils`
-6. **Z**
+5. **Z**
     - The project: [rupa/z](https://github.com/rupa/z/)
     - TL;DR: `$ brew install z`
 
