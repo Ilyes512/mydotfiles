@@ -88,6 +88,13 @@ Make sure you also install the below system packages:
     - The project: [ggreer/the_silver_searcher](https://github.com/ggreer/the_silver_searcher)
     - `$ brew install the_silver_searcher`
 
+### PHPStorm
+
+1. **.ideavimrc**
+    - `$ ln -s ~/mydotfiles/phpstorm/ideavimrc.vim ~/.ideavimrc`
+2. **TMbundles**
+   - Add the TMbundles in `~/mydotfiles/phpstorm/tmbundles` for Ruby support and matching Ruby syntax theme (Ocean).
+
 ### Remove?
 
 1. **PHP-CS-Fixer**
