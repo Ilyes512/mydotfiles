@@ -160,7 +160,7 @@ if-shell "[ -f ~/mydotfiles/tmux.conf ]" 'source ~/mydotfiles/tmux.conf'
 
 # Todo
 - [ ] Clean up vimrc
-- [ ] Replace tmuxinator with tmuxp
+- [x] Replace tmuxinator with tmuxp
 - [ ] Clean up some of the install instructions above
 - [ ] Automate "fresh" install of the above
 
