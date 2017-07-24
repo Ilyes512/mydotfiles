@@ -53,9 +53,10 @@ Make sure you also install the below system packages:
 1. **Tmux** (v1.9+)
     - The project: [tmux Homepage](https://tmux.github.io/)
     - TL;DR: `$ brew install tmux`
-2. **Tmuxinator**
-    - The project: [tmuxinator/tmuxinator](https://github.com/tmuxinator/tmuxinator)
-    - TL;DR: `$ gem install tmuxinator`
+
+2. **Tmuxp**
+    - The project: [Tmuxp](https://github.com/tony/tmuxp)
+    - TL;DR: `$ pip install tmuxp`
 3. **Tmux Plugin Manager** (TPM)
     - The project: [tmux-plugins/tpm](https://github.com/tmux-plugins/tpm)
     - TL;DR: `$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
