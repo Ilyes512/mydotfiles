@@ -288,7 +288,6 @@ endif
 
 nnoremap \ :Ag<SPACE>
 
-
 "----------Local config----------
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local

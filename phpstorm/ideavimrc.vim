@@ -1,4 +1,5 @@
 set surround "Vim surround commands
+set visualbell
 
 "'clipboard'      'cb'    clipboard options
 "'digraph'        'dg'    enable the entering of digraphs in Insert mode
