@@ -1,0 +1,4 @@
+# This can be placed on $HOME/.tool-versions to set the asdf versions
+
+erlang system
+elixir master-otp-20
