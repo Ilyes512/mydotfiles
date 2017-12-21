@@ -49,7 +49,7 @@ Make sure you also install the below system packages:
 
 1. **Fonts**
     - The project: [ryanoasis/nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
-    - `$ brew cask install font-hack-nerd-font font-firacode-nerd-font` (FuraCode Nerd Font & Knack Nerd Font)
+    - `$ brew cask install caskroom/fonts/font-hack-nerd-font caskroom/fonts/font-firacode-nerd-font` (FuraCode Nerd Font & Knack Nerd Font)
 
 ### Tmux
 
@@ -79,16 +79,19 @@ Make sure you also install the below system packages:
 
 1. **Neovim** (NVim)
     - The project: [neovim/neovim](https://github.com/neovim/neovim) 
-    - TL;DR: `$ brew install neovim/neovim/neovim`
+    - TL;DR: `$ brew install neovim`
 2. **Neovim Python3 interface**
     - [Deoplete requirements](https://github.com/Shougo/deoplete.nvim#requirements)
     - TL;DR: `$ pip3 install neovim`
     - Used by [Deoplete.nvim](https://github.com/Shougo/deoplete.nvim)
-3. **ctags**
+3. 	**Vim-plug**
+    - The project: [junegunn/vim-plug](https://github.com/junegunn/vim-plug)
+    - TL;DR: `$ curl -fLo ~/mydotfiles/vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
+4. **ctags**
     - The project: [universal-ctags/ctags](https://github.com/universal-ctags/ctags)
     - [OSX install guide](https://github.com/universal-ctags/ctags/blob/master/docs/osx.rst)
     - TL;DR: `$ brew tap universal-ctags/universal-ctags && brew install --HEAD universal-ctags`
-4. **ac** (Optional)
+5. **ac** (Optional)
     - The project: [ggreer/the_silver_searcher](https://github.com/ggreer/the_silver_searcher)
     - `$ brew install the_silver_searcher`
 
@@ -113,14 +116,11 @@ Make sure you also install the below system packages:
     - The project: [PHPMD](https://github.com/phpmd/phpmd)
     - TL;DR: `$ brew install phpmd`
     - Used by [Neomake](https://github.com/neomake/neomake)
-4. 	**Vim-plug**
-    - The project: [junegunn/vim-plug](https://github.com/junegunn/vim-plug)
-    - TL;DR: `$ curl -fLo ~/mydotfiles/vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
-5. **Msgpack**
+4. **Msgpack**
     - The project: [msgpack/msgpack-php](https://github.com/msgpack/msgpack-php)
     - TL;DR: `$ brew install homebrew/php/php70-msgpack`
     - Used by [phpcd.vim](https://github.com/phpvim/phpcd.vim) plugin
-6. **PCNTL (Process Control)**
+5. **PCNTL (Process Control)**
     - The project: [PHP PCNTL Doc](http://php.net/manual/en/book.pcntl.php)
     - TL;DR: `brew install homebrew/php/php70-pcntl`
     - Used by [phpcd.vim](https://github.com/phpvim/phpcd.vim) plugin
@@ -128,11 +128,12 @@ Make sure you also install the below system packages:
 ## Installation
 
 1. Clone the repositroy: `$ git clone https://github.com/Ilyes512/mydotfiles ~/mydotfiles --recursive`
-2. Install the dependencies above.
-3. Start VIm `$ vim` (ignoring possible message of missing packages). Press `<Leader>pi` (translates to `,pi`) to install the plugins.
-4. Start tmux `$ tmux` and press `prefix + I` (translates to `ctrl-a` followed by `shift-i`) to install the plugins.
-5. Put the below snippet's in there respective files. Also execute the commands if any are shown.
-6. After (re)opening your terminal(/iTerm) everything should be good to go. You might need to (re)source some files e.g. `$ source ~/.zshrc`.
+2. Install the dependencies above. And copy create the bellow dotfiles in your homedir(`~`).
+3. Run `sudo chsh -s $(which zsh) <username>` to make zsh your default shell.
+4. Start VIm `$ vim` (ignoring possible message of missing packages). Press `<Leader>pi` (translates to `,pi`) to install the plugins.
+5. Start tmux `$ tmux` and press `prefix + I` (translates to `ctrl-a` followed by `shift-i`) to install the plugins.
+6. Put the below snippet's in there respective files. Also execute the commands if any are shown.
+7. After (re)opening your terminal(/iTerm) everything should be good to go. You might need to (re)source some files e.g. `$ source ~/.zshrc`.
 
 **~/.zshrc**
 
