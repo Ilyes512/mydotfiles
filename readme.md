@@ -167,6 +167,14 @@ $ mkdir -p ~/.config/nvim && ln -s ~/.vimrc ~/.config/nvim/init.vim
 if-shell "[ -f ~/mydotfiles/tmux.conf ]" 'source ~/mydotfiles/tmux.conf'
 ```
 
+#### [Optional:]
+
+**Create ~/.default-npm-packages (used by [asdf node plugin](https://github.com/asdf-vm/asdf-nodejs#default-npm-packages))**
+
+```
+ln -s ~/mydotfiles/default-npm-packages ~/.default-npm-packages
+```
+
 # Todo
 - [ ] Clean up vimrc
 - [x] Replace tmuxinator with tmuxp
