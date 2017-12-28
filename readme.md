@@ -38,12 +38,15 @@ Make sure you also install the below system packages:
 
 ### ZSH
 
-1. **ZSH & Antigen**
-    - The project:
+1. **ZSH**
     - TL;DR: `$ brew install zsh`
-1. **Antigen**
-    - The project:
+2. **Antigen**
+    - The project: [zsh-users/antigen](https://github.com/zsh-users/antigen)
     - TL;DR: `$ brew install antigen`
+3. **base16-shelll (Fixes 256 theme.)**
+    - The project: [chriskempson/base16-shell](https://github.com/chriskempson/base16-shell)
+    - TL;DR: Should be installed by antigen. Only need to call the theme command once: `$ base16_ocean`
+    - Make sure you have a 256 iTerm2 theme selected from (base16-iterm2)[https://github.com/martinlindhe/base16-iterm2].
 
 ### Fonts
 
@@ -128,34 +131,36 @@ Make sure you also install the below system packages:
 ## Installation
 
 1. Clone the repositroy: `$ git clone https://github.com/Ilyes512/mydotfiles ~/mydotfiles --recursive`
-2. Install the dependencies above. And copy create the bellow dotfiles in your homedir(`~`).
+2. First install the dependencies above, before creating or symlinking the below the config files (dotfiles) in your homedir(`~`) (see `Files to be created or symlinked`).
 3. Run `sudo chsh -s $(which zsh) <username>` to make zsh your default shell.
 4. Start VIm `$ vim` (ignoring possible message of missing packages). Press `<Leader>pi` (translates to `,pi`) to install the plugins.
 5. Start tmux `$ tmux` and press `prefix + I` (translates to `ctrl-a` followed by `shift-i`) to install the plugins.
 6. Put the below snippet's in there respective files. Also execute the commands if any are shown.
 7. After (re)opening your terminal(/iTerm) everything should be good to go. You might need to (re)source some files e.g. `$ source ~/.zshrc`.
 
-**~/.zshrc**
+### Files to be created or symlinked:
+
+**Create ~/.zshrc**
 
 ```bash
 # Load from MyDotFiles
 [[ -f ~/mydotfiles/zshrc.conf ]] && source ~/mydotfiles/zshrc.conf
 ```
 
-**~/.vimrc**
+**Create ~/.vimrc**
 
 ```viml
 set runtimepath^=~/mydotfiles/vim
 source ~/mydotfiles/vimrc.vim
 ```
 
-**~/.config/nvim/init.vim** (Neovim)
+**Symlink ~/.config/nvim/init.vim** (Neovim)
 
 ```
 $ mkdir -p ~/.config/nvim && ln -s ~/.vimrc ~/.config/nvim/init.vim
 ```
 
-**~/.tmux.conf**
+**Create ~/.tmux.conf**
 
 ```
 # Load from MyDotFiles
