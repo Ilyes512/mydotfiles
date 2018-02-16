@@ -32,9 +32,6 @@ Make sure you also install the below system packages:
 5. **Z**
     - The project: [rupa/z](https://github.com/rupa/z/)
     - TL;DR: `$ brew install z`
-6. **asdf** (extendable version manager)
-    - The project: [asdf](https://github.com/asdf-vm/asdf)
-    - TL;DR: `$ brew install asdf`
 
 ### ZSH
 
@@ -174,12 +171,6 @@ if-shell "[ -f ~/mydotfiles/tmux.conf ]" 'source ~/mydotfiles/tmux.conf'
 ```
 
 #### [Optional:]
-
-**Create ~/.default-npm-packages (used by [asdf node plugin](https://github.com/asdf-vm/asdf-nodejs#default-npm-packages))**
-
-```
-ln -s ~/mydotfiles/default-npm-packages ~/.default-npm-packages
-```
 
 # Todo
 - [ ] Clean up vimrc
