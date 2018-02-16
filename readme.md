@@ -20,7 +20,7 @@ Make sure you also install the below system packages:
 1. **Homebrew** (Package manager)
     - The project: [Homebrew/brew](https://github.com/Homebrew/brew)
     - TL;DR: `$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-2. **Homebrew Cask** (Package sub0manager for GUI)
+2. **Homebrew Cask** (Package sub-manager for GUI)
     - The project: [caskroom/homebrew-cask](https://github.com/caskroom/homebrew-cask)
     - TL;DR: `$ brew tap caskroom/cask`
 3. **Python3**
