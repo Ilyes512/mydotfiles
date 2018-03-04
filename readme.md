@@ -170,6 +170,13 @@ $ ln -s ~/mydotfiles/phpstorm/ideavimrc.vim ~/.ideavimrc
 if-shell "[ -f ~/mydotfiles/tmux.conf ]" 'source ~/mydotfiles/tmux.conf'
 ```
 
+**Symlink ~/.gitignore_global**
+
+```
+ln -s ~/mydotfiles/.gitignore_global ~/.gitignore_global
+git config --global core.excludesfile "~/.gitignore_global"
+```
+
 #### [Optional:]
 
 # Todo
