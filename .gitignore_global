@@ -2,4 +2,6 @@
 .idea/
 .vagrant/
 .elixir_ls/
+tags
+tags.vendor
 
