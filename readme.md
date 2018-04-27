@@ -82,7 +82,7 @@ Make sure you also install the below system packages:
     - TL;DR: `$ brew install neovim`
 2. **Neovim Python3 interface**
     - [Deoplete requirements](https://github.com/Shougo/deoplete.nvim#requirements)
-    - TL;DR: `$ pip3 install neovim`
+    - TL;DR: `$ pip3 install neovim` or `pip3pip3 install neovim --upgradpe install neovim --upgrade`
     - Used by [Deoplete.nvim](https://github.com/Shougo/deoplete.nvim)
 3. 	**Vim-plug**
     - The project: [junegunn/vim-plug](https://github.com/junegunn/vim-plug)
