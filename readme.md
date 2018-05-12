@@ -177,6 +177,12 @@ ln -s ~/mydotfiles/.gitignore_global ~/.gitignore_global
 git config --global core.excludesfile "~/.gitignore_global"
 ```
 
+**Symlink ~./.warprc**
+
+```
+$ ln -s ~/mydotfiles/warprc.conf ~/.warprc
+```
+
 #### [Optional:]
 
 # Todo
