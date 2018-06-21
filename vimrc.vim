@@ -175,13 +175,17 @@ let g:tmuxline_theme = {
   \ }
 
 "**GitGutter**
-let g:gitgutter_enabled = 0            "Disable gitgutter by default
-let g:gitgutter_sign_column_always = 1 "Always show the gitgutter column even when there are no git changes
-let g:gitgutter_max_signs = 500        "Limit the number of gitgutter signs
-let g:gitgutter_map_keys = 0           "Disable gitgutter auto key bindings
+let g:gitgutter_enabled = 0                        "Disable gitgutter by default
+let g:gitgutter_max_signs = 500                    "Limit the number of gitgutter signs
+let g:gitgutter_map_keys = 0                       "Disable gitgutter auto key bindings
+let g:gitgutter_override_sign_column_highlight = 0 "Tell gitgutter to leave the column hightlighting alone
+if exists('')                                      " Vim 7.4.2201
+  set signcolumn=yes
+else
+  let g:gitgutter_sign_column_always = 1           "Always show the gitgutter column even when there are no git changes
+endif
 "Toggle GitGutter
 nmap <Leader>git :GitGutterToggle<cr>
-let g:gitgutter_override_sign_column_highlight = 0 "Tell gitgutter to leave the column hightlighting alone
 "Change the column's background color
 highlight SignColumn ctermbg=bg
 "Change the background colors for the four different git signs
